@@ -1,7 +1,25 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Question.create!(query: "Which of these condiments would you never eat?")
+Question.create!(query: "Would you eat something you don't like if you were very hungry?")
+Question.create!(query: "Would you rather never be able to taste something sweet for the rest of your life, or never be able to taste something savory?")
+Question.create!(query: "Pick an animal")
+Question.create!(query: "If you had to choose, would you rather never eat fruit, or never eat vegetables?")
+Question.create!(query: "Which cake is best cake?")
+Question.create!(query: "You can only eat one flavor of ice cream for the rest of you life - which would it be?")
+Question.create!(query: "Are carbs a priority?")
+Question.create!(query: "What's for breakfast?")
+Question.create!(query: "Pick a pie:")
+Question.create!(query: "Favorite hot beverage?")
+Question.create!(query: "It's midnight. You're running to the fridge. What are you grabbing?")
+Question.create!(query: "Pick a sandwich:")
+Question.create!(query: "Favorite cocktail?")
+Question.create!(query: "Pick a soup:")
+Question.create!(query: "Pick a pasta:")
+Question.create!(query: "What's your starbucks order?")
+Question.create!(query: "How do you commute?")
+Question.create!(query: "What's your favorite season?")
+Question.create!(query: "You're going out. What's your preferred venue?")
+Question.create!(query: "You're stranded on a desert island and you have one meal you can eat for a year...what is it?")
+Question.create!(query: "Pick your essential, must-have ingredient:")
+Question.create!(query: "From Hard Rock Cafe to date night romance, what kind of atmosphere are you looking for?")
+Question.create!(query: "What do you like on your bagel?")
+Question.create!(query: "If you could only have one topping on your pizza, what would it be?")
