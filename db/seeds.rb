@@ -1,4 +1,35 @@
 
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+Question.create!(query: "Leave the gun, take the.... ?")
+Question.create!(query: "Did you enjoy the Sopranos final eipsode?")
+Question.create!(query: "On a scale of 1 to Hangry, how are you feeling?")
+Question.create!(query: "Early bird or night owl?")
+Question.create!(query: "How many wheels do you normally travel on?")
+Question.create!(query: "When you go to a friend's house, do you bring...?")
+Question.create!(query: "Budget buffet or feeling fancy?")
+Question.create!(query: "How many people know your middle name?")
+Question.create!(query: "Pick a color:")
+Question.create!(query: "What do you typically do with leftovers?")
+Question.create!(query: "How clean is your bathroom right now?")
+Question.create!(query: "If you received a free ticket to anywhere, where would you go?")
+Question.create!(query: "What is the worst sensation, of the following:")
+Question.create!(query: "Cheese or chocolate?")
+Question.create!(query: "Would you rather never add salt to anything again or never add sugar to anything again?")
+Question.create!(query: "Would you rather never be able to use condiments again or have to add condiments to everything you eat?")
+Question.create!(query: "Would you rather have to eat everything hot or have to eat everything cold?")
+Question.create!(query: "Breakfast or dinner?")
+Question.create!(query: "What item do you get EVERY TIME you go to the grocery store?")
+Question.create!(query: "Would you rather add chili pepper to everything you eat or add lemon juice to everything you eat?")
+Question.create!(query: "Wine or beer?")
+Question.create!(query: "How do you take your coffee?")
+Question.create!(query: "Do you always add to much salt to your food or too much pepper to your food?")
+Question.create!(query: "Would rather eat only cheese or only meat the rest of your life?")
 Question.create!(query: "Would you rather eat the same thing every day or never be able to eat the same thing twice?")
 Question.create!(query: "If it meant you could save pizza from extinction, would you eat a cricket?")
 Question.create!(query: "Willing to walk or was today leg day?")
@@ -71,4 +102,3 @@ Question.create!(query: "Pick a smell:")
 Question.create!(query: "Which season of Chef's Table was your favorite?")
 Question.create!(query: "Dumplings or sandwiches?")
 Question.create!(query: "Pick a dystopian universe:")
-
