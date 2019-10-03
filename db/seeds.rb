@@ -1,4 +1,11 @@
 
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
 Question.create!(query: "Leave the gun, take the.... ?", question_format_id: 1)
 Question.create!(query: "Did you enjoy the Sopranos final eipsode?", question_format_id: 3)
 Question.create!(query: "On a scale of 1 to Hangry, how are you feeling?", question_format_id: 2)
@@ -23,13 +30,9 @@ Question.create!(query: "Wine or beer?", question_format_id: 3)
 Question.create!(query: "How do you take your coffee?", question_format_id: 1)
 Question.create!(query: "Do you always add to much salt to your food or too much pepper to your food?", question_format_id: 3)
 Question.create!(query: "Would rather eat only cheese or only meat the rest of your life?", question_format_id: 3)
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+
+# ----- Tehilla's Questions -------------------------------------------------------------------------------->
+
 Question.create!(query: "Would you rather eat the same thing every day or never be able to eat the same thing twice?")
 Question.create!(query: "If it meant you could save pizza from extinction, would you eat a cricket?")
 Question.create!(query: "Willing to walk or was today leg day?")
@@ -54,31 +57,37 @@ Question.create!(query: "Which best describes your current mood?")
 Question.create!(query: "What's your favorite vegetable?")
 Question.create!(query: "Last minute reservation?")
 Question.create!(query: "How many slices of pizza can you eat in a single sitting?")
-Question.create!(query: "Which of these condiments would you never eat?")
-Question.create!(query: "Would you eat something you don't like if you were very hungry?")
-Question.create!(query: "Would you rather never be able to taste something sweet for the rest of your life, or never be able to taste something savory?")
-Question.create!(query: "Pick an animal")
-Question.create!(query: "If you had to choose, would you rather never eat fruit, or never eat vegetables?")
-Question.create!(query: "Which cake is best cake?")
-Question.create!(query: "You can only eat one flavor of ice cream for the rest of you life - which would it be?")
-Question.create!(query: "Are carbs a priority?")
-Question.create!(query: "What's for breakfast?")
-Question.create!(query: "Pick a pie:")
-Question.create!(query: "Favorite hot beverage?")
-Question.create!(query: "It's midnight. You're running to the fridge. What are you grabbing?")
-Question.create!(query: "Pick a sandwich:")
-Question.create!(query: "Favorite cocktail?")
-Question.create!(query: "Pick a soup:")
-Question.create!(query: "Pick a pasta:")
-Question.create!(query: "What's your starbucks order?")
-Question.create!(query: "How do you commute?")
-Question.create!(query: "What's your favorite season?")
-Question.create!(query: "You're going out. What's your preferred venue?")
-Question.create!(query: "You're stranded on a desert island and you have one meal you can eat for a year...what is it?")
-Question.create!(query: "Pick your essential, must-have ingredient:")
-Question.create!(query: "From Hard Rock Cafe to date night romance, what kind of atmosphere are you looking for?")
-Question.create!(query: "What do you like on your bagel?")
-Question.create!(query: "If you could only have one topping on your pizza, what would it be?")
+
+# ----- Kayla's Questions -------------------------------------------------------------------------------->
+
+Question.create!(query: "Which of these condiments would you never eat?", question_format_id: "1")
+Question.create!(query: "Would you eat something you don't like if you were very hungry?", question_format_id: "3")
+Question.create!(query: "Would you rather never be able to taste something sweet for the rest of your life, or never be able to taste something savory?", question_format_id: "3")
+Question.create!(query: "Pick an animal", question_format_id: "1")
+Question.create!(query: "If you had to choose, would you rather never eat fruit, or never eat vegetables?", question_format_id: "3")
+Question.create!(query: "Which cake is best cake?", question_format_id: "1")
+Question.create!(query: "You can only eat one flavor of ice cream for the rest of you life - which would it be?", question_format_id: "1")
+Question.create!(query: "Are carbs a priority?", question_format_id: "3")
+Question.create!(query: "What's for breakfast?", question_format_id: "1")
+Question.create!(query: "Pick a pie:", question_format_id: "1")
+Question.create!(query: "Favorite hot beverage?", question_format_id: "1")
+Question.create!(query: "It's midnight. You're running to the fridge. What are you grabbing?", question_format_id: "1")
+Question.create!(query: "Pick a sandwich:", question_format_id: "1")
+Question.create!(query: "Favorite cocktail?", question_format_id: "1")
+Question.create!(query: "Pick a soup:", question_format_id: "1")
+Question.create!(query: "Pick a pasta:", question_format_id: "1")
+Question.create!(query: "What's your starbucks order?", question_format_id: "1")
+Question.create!(query: "How do you commute?", question_format_id: "1")
+Question.create!(query: "What's your favorite season?", question_format_id: "1")
+Question.create!(query: "You're going out. What's your preferred venue?", question_format_id: "1")
+Question.create!(query: "You're stranded on a desert island and you have one meal you can eat for a year...what is it?", question_format_id: "1")
+Question.create!(query: "Pick your essential, must-have ingredient:", question_format_id: "1")
+Question.create!(query: "From Hard Rock Cafe to date night romance, what kind of atmosphere are you looking for?", question_format_id: "1")
+Question.create!(query: "What do you like on your bagel?", question_format_id: "1")
+Question.create!(query: "If you could only have one topping on your pizza, what would it be?", question_format_id: "1")
+
+# ----- Adam's Questions -------------------------------------------------------------------------------->
+
 Question.create!(query: "Which do you prefer for a vacation: beach or foreign city?", question_format_id: 3)
 Question.create!(query: "What's on your hot dog?", question_format_id: 1)
 Question.create!(query: "Any little ones joining the party?", question_format_id: 3)
