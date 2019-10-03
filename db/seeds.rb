@@ -1,11 +1,7 @@
+QuestionFormat.create!(format: "Multiple Choice")
+QuestionFormat.create!(format: "Scale")
+QuestionFormat.create!(format: "True or False")
 
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 Question.create!(query: "Leave the gun, take the.... ?")
 Question.create!(query: "Did you enjoy the Sopranos final eipsode?")
 Question.create!(query: "On a scale of 1 to Hangry, how are you feeling?")
