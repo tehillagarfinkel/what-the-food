@@ -1,3 +1,8 @@
+SearchFilter.create!(category: "Cuisine")
+SearchFilter.create!(category: "Establishment type")
+SearchFilter.create!(category: "Food type")
+SearchFilter.create!(category: "Dietary restrictions")
+
 QuestionFormat.create!(format: "Multiple Choice")
 QuestionFormat.create!(format: "Scale")
 QuestionFormat.create!(format: "True or False")
