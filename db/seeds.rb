@@ -49,7 +49,7 @@ Question.create!(query: "Of the following, what is your favorite fast food resta
 Question.create!(query: "Do you have a sweet tooth?", question_format_id: 3)
 Question.create!(query: "What outfit are you wearing right now?", question_format_id: 1)
 Question.create!(query: "How adventurous are you feeling?", question_format_id: 1)
-Question.create!(query: "Which mythological creature do you wish were real?")
+Question.create!(query: "Which mythological creature do you wish were real?", question_format_id: 1)
 Question.create!(query: "Do you have a sweet tooth?", question_format_id: 3)
 Question.create!(query: "Which mythological creature do you wish were real?", question_format_id: 1)
 Question.create!(query: "Do you grow your own herbs?", question_format_id: 3)
