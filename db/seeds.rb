@@ -6,6 +6,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+QuestionFormat.create!(format: "Multiple Choice")
+QuestionFormat.create!(format: "Scale")
+QuestionFormat.create!(format: "True or False")
+
 Question.create!(query: "Leave the gun, take the.... ?", question_format_id: 1)
 Question.create!(query: "Did you enjoy the Sopranos final eipsode?", question_format_id: 3)
 Question.create!(query: "On a scale of 1 to Hangry, how are you feeling?", question_format_id: 2)
