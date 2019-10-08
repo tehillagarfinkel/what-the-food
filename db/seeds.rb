@@ -116,6 +116,112 @@ Question.create!(query: "Which season of Chef's Table was your favorite?", quest
 Question.create!(query: "Dumplings or sandwiches?", question_format_id: 3)
 Question.create!(query: "Pick a dystopian universe:", question_format_id: 1)
 
+# ---------------- Tom's answers ---------------------------------------------
+
+Answer.create!(option: "cannoli", question_id: 1, search_filter_id: 1)
+Answer.create!(option: "manju (sweet bean cake)", question_id: 1, search_filter_id: 1)
+Answer.create!(option: "peach cobbler", question_id: 1, search_filter_id: 1)
+Answer.create!(option: "dulce de leche", question_id: 1, search_filter_id: 1)
+
+Answer.create!(option: "Yes", question_id: 2, search_filter_id: 1)
+Answer.create!(option: "No", question_id: 2, search_filter_id: 1)
+
+Answer.create!(option: "Meh, I could eat", question_id: 3, search_filter_id: 3)
+Answer.create!(option: "peckish", question_id: 3, search_filter_id: 3)
+Answer.create!(option: "snappish", question_id: 3, search_filter_id: 3)
+Answer.create!(option: "How many times can I refresh the ETA?", question_id: 3, search_filter_id: 3)
+Answer.create!(option: "Tea and cake or death", question_id: 3, search_filter_id: 3)
+
+Answer.create!(option: "Up before 4 AM", question_id: 4, search_filter_id: 3)
+Answer.create!(option: "Day starts at 6", question_id: 4, search_filter_id: 3)
+Answer.create!(option: "Noon is a happy medium", question_id: 4, search_filter_id: 3)
+Answer.create!(option: "Out on the town for dinner", question_id: 4, search_filter_id: 3)
+Answer.create!(option: "4 AM? You mean bedtime?", question_id: 4, search_filter_id: 3)
+
+Answer.create!(option: "One", question_id: 5, search_filter_id: 3)
+Answer.create!(option: "Two", question_id: 5, search_filter_id: 3)
+Answer.create!(option: "Four", question_id: 5, search_filter_id: 3)
+Answer.create!(option: "Zero", question_id: 5, search_filter_id: 3)
+
+Answer.create!(option: "Booze for the host", question_id: 6, search_filter_id: 7)
+Answer.create!(option: "Booze to share", question_id: 6, search_filter_id: 7)
+Answer.create!(option: "Booze for yourself", question_id: 6, search_filter_id: 7)
+Answer.create!(option: "Nothing, I drink their stock", question_id: 6, search_filter_id: 7)
+
+Answer.create!(option: "Dirty water dogs", question_id: 7, search_filter_id: 7)
+Answer.create!(option: "Local diner", question_id: 7, search_filter_id: 7)
+Answer.create!(option: "The neighborhood standby", question_id: 7, search_filter_id: 7)
+Answer.create!(option: "The best damn joint in town", question_id: 7, search_filter_id: 7)
+Answer.create!(option: "Le Bernardin", question_id: 7, search_filter_id: 7)
+
+Answer.create!(option: "No one", question_id: 8, search_filter_id: 2)
+Answer.create!(option: "2-3 people", question_id: 8, search_filter_id: 2)
+Answer.create!(option: "10-20 people", question_id: 8, search_filter_id: 2)
+Answer.create!(option: "Literally everyone", question_id: 8, search_filter_id: 2)
+
+Answer.create!(option: "Blue", question_id: 9, search_filter_id: 1)
+Answer.create!(option: "Red", question_id: 9, search_filter_id: 1)
+Answer.create!(option: "Orange", question_id: 9, search_filter_id: 1)
+Answer.create!(option: "Green", question_id: 9, search_filter_id: 1)
+
+Answer.create!(option: "Leftovers? What are leftovers?", question_id: 10, search_filter_id: 7)
+Answer.create!(option: "Toss them in the fridge and then forget about them", question_id: 10, search_filter_id: 7)
+Answer.create!(option: "Bring them to work for lunch the next day", question_id: 10, search_filter_id: 7)
+Answer.create!(option: "Use them as ingredients for another meal", question_id: 10, search_filter_id: 7)
+
+Answer.create!(option: "You could eat off the floor", question_id: 11, search_filter_id: 6)
+Answer.create!(option: "Spic n' span", question_id: 11, search_filter_id: 6)
+Answer.create!(option: "It could use a quick clean", question_id: 11, search_filter_id: 6)
+Answer.create!(option: "Bit of a mess right now", question_id: 11, search_filter_id: 6)
+Answer.create!(option: "What's growing in the sink?", question_id: 11, search_filter_id: 6)
+
+Answer.create!(option: "Great Wall of China", question_id: 12, search_filter_id: 1)
+Answer.create!(option: "Egyptian Pyramids", question_id: 12, search_filter_id: 1)
+Answer.create!(option: "Eiffel Tower", question_id: 12, search_filter_id: 1)
+Answer.create!(option: "The Alamo", question_id: 12, search_filter_id: 1)
+
+Answer.create!(option: "Breaking a nail", question_id: 13, search_filter_id: 1)
+Answer.create!(option: "Stepping in a mud pile", question_id: 13, search_filter_id: 1)
+Answer.create!(option: "Burning your fingertip", question_id: 13, search_filter_id: 1)
+Answer.create!(option: "Touching someone's chewed gum stuck under the table", question_id: 13, search_filter_id: 1)
+
+Answer.create!(option: "Cheese", question_id: 14, search_filter_id: 1)
+Answer.create!(option: "Chocolate", question_id: 14, search_filter_id: 1)
+
+Answer.create!(option: "Salt", question_id: 15, search_filter_id: 1)
+Answer.create!(option: "Sugar", question_id: 15, search_filter_id: 1)
+
+Answer.create!(option: "Never", question_id: 16, search_filter_id: 1)
+Answer.create!(option: "Always", question_id: 16, search_filter_id: 1)
+
+Answer.create!(option: "Hot", question_id: 17, search_filter_id: 1)
+Answer.create!(option: "Cold", question_id: 17, search_filter_id: 1)
+
+Answer.create!(option: "Breakfast", question_id: 18, search_filter_id: 3)
+Answer.create!(option: "Dinner", question_id: 18, search_filter_id: 3)
+
+Answer.create!(option: "Coffee", question_id: 19, search_filter_id: 3)
+Answer.create!(option: "A pastry", question_id: 19, search_filter_id: 3)
+Answer.create!(option: "Meat", question_id: 19, search_filter_id: 3)
+Answer.create!(option: "Avocados", question_id: 19, search_filter_id: 3)
+
+Answer.create!(option: "Chili pepper", question_id: 20, search_filter_id: 1)
+Answer.create!(option: "Lemon juice", question_id: 20, search_filter_id: 1)
+
+Answer.create!(option: "Wine", question_id: 21, search_filter_id: 3)
+Answer.create!(option: "Beer", question_id: 21, search_filter_id: 3)
+
+Answer.create!(option: "Black. Is there any other way?", question_id: 22, search_filter_id: 3)
+Answer.create!(option: "Splash of cream, no sugar", question_id: 22, search_filter_id: 3)
+Answer.create!(option: "Sweet, no cream", question_id: 22, search_filter_id: 3)
+Answer.create!(option: "Would you like some coffee with your sweetened milk?", question_id: 22, search_filter_id: 3)
+
+Answer.create!(option: "Salt", question_id: 23, search_filter_id: 3)
+Answer.create!(option: "Pepper", question_id: 23, search_filter_id: 3)
+
+Answer.create!(option: "Cheese", question_id: 24, search_filter_id: 3)
+Answer.create!(option: "Meat", question_id: 24, search_filter_id: 3)
+
 # ---------------- Tehilla's answers ---------------------------------------------
 
 Answer.create!(option: "same thing every day", question_id: 25, search_filter_id: 1)
