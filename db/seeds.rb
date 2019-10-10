@@ -327,8 +327,8 @@ Answer.create!(option: "Mayonnaise", question_id: 51, search_filter_id: 1)
 Answer.create!(option: "Barbecue Sauce", question_id: 51, search_filter_id: 1)
 Answer.create!(option: "Sriracha", question_id: 51, search_filter_id: 1)
 
-Answer.create!(option: "Yes", question_id: 52, search_filter_id: )
-Answer.create!(option: "No", question_id: 52, search_filter_id: )
+Answer.create!(option: "Yes", question_id: 52, search_filter_id: 1)
+Answer.create!(option: "No", question_id: 52, search_filter_id: 1)
 
 Answer.create!(option: "I don't have much of a sweet tooth anyway, bring on the savory.", question_id: 53, search_filter_id: 1)
 Answer.create!(option: "All the sweets, all the time!", question_id: 53, search_filter_id: 1)
@@ -569,6 +569,3 @@ Answer.create!(option: "Mad Max", question_id: 97, search_filter_id: 2)
 Answer.create!(option: "Hunger Games", question_id: 97, search_filter_id: 2)
 Answer.create!(option: "The Handmaid's Tale", question_id: 97, search_filter_id: 2)
 Answer.create!(option: "Zombieland", question_id: 97, search_filter_id: 2)
-
-
-
