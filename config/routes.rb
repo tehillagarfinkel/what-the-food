@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   # end
 
   root to: "pages#index"
+  namespace :api do
+    get "/results" => "results#index"
+  end
 end
