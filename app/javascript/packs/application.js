@@ -6,6 +6,7 @@
 require("@rails/ujs").start();
 require("@rails/activestorage").start();
 require("channels");
+require("turbolinks");
 
 import Vue from "vue/dist/vue.esm";
 import App from "../app.vue";
