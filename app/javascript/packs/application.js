@@ -10,9 +10,24 @@ require("turbolinks");
 
 import Vue from "vue/dist/vue.esm";
 import App from "../app.vue";
+import VueRouter from 'vue-router';
+Vue.use(VueRouter);
+
+import Login from '../components/Login';
+import Signup from '../components/Signup';
+import Home from '../components/Home';
+
+const routes = [
+  { path: '/', component: Home },
+  { path: '/login', component: Login },
+  { path: '/signup', component: Signup }
+]
+
+const router = new VueRouter({ routes });
 
 document.addEventListener("DOMContentLoaded", () => {
   const app = new Vue({
+    router,
     el: "#vue-app",
     template: `<App />`,
     components: { App }
