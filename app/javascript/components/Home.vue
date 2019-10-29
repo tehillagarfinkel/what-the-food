@@ -1,16 +1,19 @@
 <template>
   <div class="Home">
-    <h1>Home</h1>
+    <img src="" alt="" />
+    <input type="text" v-model="this.zip" />
+    <router-link to="Question">WTF am I hungy for?!</router-link>
   </div>
 </template>
 
 <script>
 export default {
   data: function() {
-    return {};
+    return {
+      zip: "Enter ZIP code"
+    };
   }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

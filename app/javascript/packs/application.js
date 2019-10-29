@@ -10,18 +10,20 @@ require("turbolinks");
 
 import Vue from "vue/dist/vue.esm";
 import App from "../app.vue";
-import VueRouter from 'vue-router';
+import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
-import Login from '../components/Login';
-import Signup from '../components/Signup';
-import Home from '../components/Home';
+import Login from "../components/Login";
+import Signup from "../components/Signup";
+import Home from "../components/Home";
+import Question from "../components/Question";
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/login', component: Login },
-  { path: '/signup', component: Signup }
-]
+  { path: "/", component: Home },
+  { path: "/login", component: Login },
+  { path: "/signup", component: Signup },
+  { path: "/question", component: Question }
+];
 
 const router = new VueRouter({ routes });
 

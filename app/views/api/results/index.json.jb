@@ -1,0 +1,8 @@
+@restaurants["businesses"].each do |restaurant|
+  {
+    id: restaurant["id"],
+    name: restaurant["name"],
+  }
+end
+
+# @restaurants["businesses"][0]["name"]
