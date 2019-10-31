@@ -1,7 +1,7 @@
 <template>
   <div class="question">
-    <div class="m/c" v-if="this.questionFormatId === 1">
-      <h1>{{ this.query }}</h1>
+    <h1>{{ query }}</h1>
+    <div class="m/c" v-if="this.questionFormatId === 1 || 3">
       <form action="">
         <div v-for="option in options">
           <input type="radio" name="answer" :value="option" :id="`${option}`" />
@@ -15,7 +15,6 @@
         <p>{{ options[rangeValue - 1] }}</p>
       </div>
     </div>
-    <div class="true/false" v-if="questionFormatId === 3">G</div>
 
     <router-link to="Question" v-if="counter < 20">
       Next Question...
@@ -30,7 +29,7 @@
 export default {
   data: function() {
     return {
-      questionFormatId: 2,
+      questionFormatId: 3,
       counter: 1,
       query: "What is your name?",
       options: ["Adam", "Tehilla", "Kayla", "Tom", "Dan"],
