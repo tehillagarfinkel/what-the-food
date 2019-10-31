@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   root to: "pages#index"
   namespace :api do
     get "/results" => "results#index"
+    get "/questions/:id" => "questions#show"
   end
 end
