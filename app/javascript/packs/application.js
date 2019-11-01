@@ -12,6 +12,9 @@ import Vue from "vue/dist/vue.esm";
 import App from "../app.vue";
 import VueRouter from "vue-router";
 Vue.use(VueRouter);
+import axios from "axios";
+
+axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "/";
 
 import Login from "../components/Login";
 import Signup from "../components/Signup";
