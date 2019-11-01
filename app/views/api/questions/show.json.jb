@@ -2,5 +2,5 @@
   id: @question.id,
   query: @question.query,
   question_format_id: @question.question_format_id,
-  answer: @question.answers,
+  answers: @question.answers,
 }
