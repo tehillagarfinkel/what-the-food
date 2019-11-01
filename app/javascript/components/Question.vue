@@ -41,7 +41,13 @@ export default {
   },
   mounted: function() {
     this.loadQuestion();
+    var counter = localStorage.getItem("counter");
+    var zip = localStorage.getItem("zip");
+    console.log(counter);
+    console.log(zip);
+    console.log(localStorage);
   },
+
   methods: {
     loadQuestion: function() {
       var params = {
