@@ -5,7 +5,7 @@
       <form action="">
         <div v-for="option in answers">
           <input type="radio" name="answer" :value="option" :id="`${option}`" />
-          {{ option }}
+          {{ option.option }}
         </div>
       </form>
     </div>
@@ -49,6 +49,7 @@ export default {
       };
       axios.get("/api/questions/" + params["number"]).then(response => {
         this.query = response.data.query;
+        this.answers = response.data.answers;
       });
       // this.questionFormatId = 2;
     }
