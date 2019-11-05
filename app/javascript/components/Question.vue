@@ -16,10 +16,12 @@
       </div>
     </div>
 
-    <router-link to="Question" v-if="counter < 20">
-      Next Question...
-    </router-link>
-    <router-link to="Results" v-else>Show My Results</router-link>
+    <div v-if="counter < 20">
+      <button v-on:click="loadQuestion()">Next Question...</button>
+    </div>
+    <div v-if="counter >= 20">
+      <router-link to="Results">Show My Results</router-link>
+    </div>
   </div>
 </template>
 
@@ -31,7 +33,7 @@ export default {
   data: function() {
     return {
       questionFormatId: "",
-      counter: 1,
+      counter: 0,
       query: "",
       answers: [],
       option: "",
@@ -41,11 +43,9 @@ export default {
   },
   mounted: function() {
     this.loadQuestion();
-    var counter = localStorage.getItem("counter");
     var zip = localStorage.getItem("zip");
-    console.log(counter);
     console.log(zip);
-    console.log(localStorage);
+    console.log(this.counter);
   },
 
   methods: {
@@ -57,11 +57,9 @@ export default {
         this.query = response.data.query;
         this.answers = response.data.answers;
       });
-      // this.questionFormatId = 2;
+      this.counter += 1;
+      console.log(this.counter);
     }
-    // handleChange(e) {
-    //   console.log(e.target.value, this.rangeValue);
-    // }
   }
 };
 </script>

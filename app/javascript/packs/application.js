@@ -14,8 +14,6 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 import axios from "axios";
 
-axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "/";
-
 import Login from "../components/Login";
 import Signup from "../components/Signup";
 import Home from "../components/Home";

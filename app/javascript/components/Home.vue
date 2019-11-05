@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     start: function() {
-      localStorage.setItem("counter", "hello");
+      localStorage.setItem("counter", 0);
       localStorage.setItem("zip", this.zip);
     }
   }
