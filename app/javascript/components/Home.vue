@@ -2,7 +2,9 @@
   <div class="Home">
     <img src="" alt="" />
     <input type="text" v-model="zip" />
-    <router-link v-on:click="start()" to="Question">WTF am I hungy for?!</router-link>
+    <router-link to="Question">
+      <button v-on:click="start()">WTF am I hungry for?!</button>
+    </router-link>
   </div>
 </template>
 

@@ -7,8 +7,9 @@ class Api::ResultsController < ApplicationController
       })
       .get("https://api.yelp.com/v3/businesses/search", params: { location: 60601, radius: 4000, open_now: true, categories: "Restaurants" })
       .parse
+    # .map()???
 
     render "index.json.jb"
-    # render json: response
+    # render json: @restaurants
   end
 end
