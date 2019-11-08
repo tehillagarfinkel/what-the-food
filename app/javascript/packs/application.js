@@ -12,6 +12,7 @@ import Vue from "vue/dist/vue.esm";
 import App from "../app.vue";
 import VueRouter from "vue-router";
 Vue.use(VueRouter);
+import axios from "axios";
 
 import Login from "../components/Login";
 import Signup from "../components/Signup";

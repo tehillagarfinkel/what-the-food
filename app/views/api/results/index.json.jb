@@ -1,8 +1,13 @@
-@restaurants["businesses"].each do |restaurant|
+@restaurants["businesses"].map do |restaurant|
   {
     id: restaurant["id"],
     name: restaurant["name"],
+    image_url: restaurant["image_url"],
+    price: restaurant["price"],
+    url: restaurant["url"],
+    rating: restaurant["rating"],
+    coordinates: restaurant["coordinates"],
+    phone: restaurant["display_phone"],
+    location: restaurant["location"],
   }
 end
-
-# @restaurants["businesses"][0]["name"]

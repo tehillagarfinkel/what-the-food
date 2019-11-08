@@ -1,8 +1,10 @@
 <template>
   <div class="Home">
     <img src="" alt="" />
-    <input type="text" v-model="this.zip" />
-    <router-link to="Question">WTF am I hungy for?!</router-link>
+    <input type="text" v-model="zip" />
+    <router-link to="Question">
+      <button v-on:click="start()">WTF am I hungry for?!</button>
+    </router-link>
   </div>
 </template>
 
@@ -12,8 +14,15 @@ export default {
     return {
       zip: "Enter ZIP code"
     };
+  },
+  methods: {
+    start: function() {
+      localStorage.setItem("counter", 0);
+      localStorage.setItem("zip", this.zip);
+    }
   }
 };
 </script>
 
 <style scoped></style>
+

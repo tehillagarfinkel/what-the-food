@@ -9,6 +9,5 @@ class Api::ResultsController < ApplicationController
       .parse
 
     render "index.json.jb"
-    # render json: response
   end
 end
