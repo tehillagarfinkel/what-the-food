@@ -2,7 +2,7 @@
 //   {
 //     name: "East Asian",
 //     answer_ids: [1],
-//   },,
+//   },
 //   {
 //     name: "Japan",
 //     answer_ids: [1,4]
@@ -14,6 +14,7 @@
 // });
 
 // format raw data as above
+
 let options = [
   { name: "Beer Garden", answer_ids: [] },
   { name: "Beer Hall", answer_ids: [] },
