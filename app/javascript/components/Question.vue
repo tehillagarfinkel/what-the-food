@@ -4,7 +4,12 @@
     <div class="m/c" v-if="this.questionFormatId === 1 || 3">
       <form action="">
         <div v-for="option in answers">
-          <input type="radio" name="answer" :value="option" :id="`${option}`" />
+          <input
+            type="radio"
+            name="answer"
+            :value="option.id"
+            id="option-input"
+          />
           {{ option.option }}
         </div>
       </form>
@@ -16,11 +21,13 @@
       </div>
     </div>
 
-    <div v-if="counter < 20">
-      <button v-on:click="loadQuestion()">Next Question...</button>
+    <div v-if="counter < 3">
+      <button v-on:click="submit()">Next Question...</button>
     </div>
-    <div v-if="counter >= 20">
-      <router-link to="Results">Show My Results</router-link>
+    <div v-if="counter >= 3">
+      <!-- <router-link to="Results"> -->
+      <button @click="sendSelectedAnswerIds()">Show My Results</button>
+      <!-- </router-link> -->
     </div>
   </div>
 </template>
@@ -38,7 +45,8 @@ export default {
       answers: [],
       option: "",
       rangeValue: 3,
-      searchFilterId: ""
+      searchFilterId: "",
+      selectedAnswerIds: []
     };
   },
   mounted: function() {
@@ -49,6 +57,19 @@ export default {
   },
 
   methods: {
+    submit: function() {
+      let id;
+      if (this.questionFormatId === 2) {
+        const answer = this.answers[this.rangeValue - 1];
+        id = answer.id;
+      } else {
+        const input = document.querySelector("#option-input");
+        id = input.value;
+      }
+      this.selectedAnswerIds.push(id);
+      console.log(this.selectedAnswerIds);
+      this.loadQuestion();
+    },
     loadQuestion: function() {
       var params = {
         number: Math.floor(Math.random() * 96) + 1
@@ -59,6 +80,12 @@ export default {
       });
       this.counter += 1;
       console.log(this.counter);
+    },
+    sendSelectedAnswerIds: function() {
+      let params = { searchFilterIds: this.selectedAnswerIds };
+      axios
+        .post("/api/results", params)
+        .then(response => console.log(response.data));
     }
   }
 };
