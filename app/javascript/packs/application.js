@@ -18,12 +18,14 @@ import Login from "../components/Login";
 import Signup from "../components/Signup";
 import Home from "../components/Home";
 import Question from "../components/Question";
+import Results from "../components/Results";
 
 const routes = [
   { path: "/", component: Home },
   { path: "/login", component: Login },
   { path: "/signup", component: Signup },
-  { path: "/question", component: Question }
+  { path: "/question", component: Question },
+  { path: "/results", component: Results }
 ];
 
 const router = new VueRouter({ routes });
