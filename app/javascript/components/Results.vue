@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <router-link to="Questions">Not what you're looking for? Try again.</router-link>
+    <router-link to="Question">Not what you're looking for? Try again.</router-link>
     <button @click="showLess = false">See more results.</button>
   </div>
 </template>
