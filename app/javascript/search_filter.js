@@ -464,5 +464,145 @@ let options = [
   {
     name: "Vegetarian",
     answer_ids: []
+  },
+  {
+    name: "Asian Fusion",
+    answer_ids: []
+  },
+  {
+    name: "Baguettes",
+    answer_ids: []
+  },
+  {
+    name: "Barbeque",
+    answer_ids: []
+  },
+  {
+    name: "Pancakes",
+    answer_ids: []
+  },
+  {
+    name: "Burgers",
+    answer_ids: []
+  },
+  {
+    name: "Cheesesteaks",
+    answer_ids: []
+  },
+  {
+    name: "Chicken Wings",
+    answer_ids: []
+  },
+  {
+    name: "Curry Sausage",
+    answer_ids: []
+  },
+  {
+    name: "Dumplings",
+    answer_ids: []
+  },
+  {
+    name: "Fish & Chips",
+    answer_ids: []
+  },
+  {
+    name: "Flatbread",
+    answer_ids: []
+  },
+  {
+    name: "Fondue",
+    answer_ids: []
+  },
+  {
+    name: "Game Meat",
+    answer_ids: []
+  },
+  {
+    name: "Hot Dogs",
+    answer_ids: []
+  },
+  {
+    name: "Ramen",
+    answer_ids: []
+  },
+  {
+    name: "Tempura",
+    answer_ids: []
+  },
+  {
+    name: "Kebab",
+    answer_ids: []
+  },
+  {
+    name: "Live/Raw Food",
+    answer_ids: []
+  },
+  {
+    name: "Meatballs",
+    answer_ids: []
+  },
+  {
+    name: "Falafel",
+    answer_ids: []
+  },
+  {
+    name: "Tacos",
+    answer_ids: []
+  },
+  {
+    name: "Pita",
+    answer_ids: []
+  },
+  {
+    name: "Pizza",
+    answer_ids: []
+  },
+  {
+    name: "Polish",
+    answer_ids: []
+  },
+  {
+    name: "Pierogis",
+    answer_ids: []
+  },
+  {
+    name: "Potatoes",
+    answer_ids: []
+  },
+  {
+    name: "Rice",
+    answer_ids: []
+  },
+  {
+    name: "Rotisserie Chicken",
+    answer_ids: []
+  },
+  {
+    name: "Salad",
+    answer_ids: []
+  },
+  {
+    name: "Sandwiches",
+    answer_ids: []
+  },
+  {
+    name: "Schnitzel",
+    answer_ids: []
+  },
+  {
+    name: "Soup",
+    answer_ids: []
+  },
+  {
+    name: "Tapas/Small Plates",
+    answer_ids: []
+  },
+  {
+    name: "Waffles",
+    answer_ids: []
+  },
+  {
+    name: "Wraps",
+    answer_ids: []
   }
 ];
