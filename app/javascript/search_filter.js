@@ -16,45 +16,45 @@
 // format raw data as above
 
 let options = [
-  { name: "Beer Garden", answer_ids: [] },
-  { name: "Beer Hall", answer_ids: [] },
-  { name: "Bistros", answer_ids: [84, 102] },
+  { name: "Beer Garden", answer_ids: [106, 136, 143, 145] },
+  { name: "Beer Hall", answer_ids: [106, 142, 143, 145] },
+  { name: "Bistros", answer_ids: [84, 102, 105, 133] },
   { name: "Brasseries", answer_ids: [] },
-  { name: "Breakfast & Brunch", answer_ids: [86, 87, 89, 100] },
-  { name: "Buffets", answer_ids: [] },
-  { name: "Cafes", answer_ids: [86, 96] },
-  { name: "Themed Cafes", answer_ids: [96] },
-  { name: "Cafeteria", answer_ids: [81, 87, 89, 100] },
-  { name: "Canteen", answer_ids: [] },
+  { name: "Breakfast & Brunch", answer_ids: [86, 87, 89, 100, 103, 106, 109, 124, 125, 126, 127] },
+  { name: "Buffets", answer_ids: [106, 144] },
+  { name: "Cafes", answer_ids: [86, 96, 109] },
+  { name: "Themed Cafes", answer_ids: [96, 110, 115] },
+  { name: "Cafeteria", answer_ids: [81, 87, 89, 100, 106, 151, 152, 153] },
+  { name: "Canteen", answer_ids: [151, 152, 153] },
   { name: "Chicken Shop", answer_ids: [101] },
-  { name: "Comfort Food", answer_ids: [81, 86, 94, 100, 101] },
-  { name: "Creperies", answer_ids: [] },
-  { name: "Delis", answer_ids: [89] },
+  { name: "Comfort Food", answer_ids: [81, 86, 94, 100, 101, 107, 108, 109, 136, 138, 139, 140, 141, 142, 143, 145] },
+  { name: "Creperies", answer_ids: [103, 110] },
+  { name: "Delis", answer_ids: [89, 106] },
   { name: "Diners", answer_ids: [] },
-  { name: "Dinner Theater", answer_ids: [] },
-  { name: "Fast Food", answer_ids: [83, 94, 99, 100, 101] },
-  { name: "Food Court", answer_ids: [83, 94, 99, 100, 101] },
-  { name: "Food Stands", answer_ids: [83, 94, 99, 100, 101] },
-  { name: "Gastropubs", answer_ids: [] },
+  { name: "Dinner Theater", answer_ids: [144, 128, 129, 131] },
+  { name: "Fast Food", answer_ids: [83, 94, 99, 100, 101, 107, 109, 119, 121, 138, 139, 140, 141, 149, 151, 152, 153] },
+  { name: "Food Court", answer_ids: [83, 94, 99, 100, 101, 107, 119, 138, 139, 140, 141, 149] },
+  { name: "Food Stands", answer_ids: [83, 94, 99, 100, 101, 107, 119, 138, 139, 140, 141, 149] },
+  { name: "Gastropubs", answer_ids: [136, 143, 145] },
   { name: "Hong Kong Style Cafe", answer_ids: [96] },
-  { name: "Conveyor Belt Sushi", answer_ids: [] },
-  { name: "Milk Bars", answer_ids: [] },
+  { name: "Conveyor Belt Sushi", answer_ids: [116] },
+  { name: "Milk Bars", answer_ids: [126, 127, 142, 143, 145] },
   { name: "Night Food", answer_ids: [94] },
   { name: "Noodles", answer_ids: [] },
   { name: "Open Sandwiches", answer_ids: [] },
   { name: "Parent Cafes", answer_ids: [] },
-  { name: "Pop-Up Restaurants", answer_ids: [] },
+  { name: "Pop-Up Restaurants", answer_ids: [106, 115] },
   { name: "Poutineries", answer_ids: [] },
-  { name: "Pub Food", answer_ids: [101] },
+  { name: "Pub Food", answer_ids: [101, 133] },
   { name: "Soul Food", answer_ids: [83, 87, 94] },
-  { name: "Steakhouses", answer_ids: [84, 102, 93, 95] },
-  { name: "Supper Clubs", answer_ids: [] },
-  { name: "Sushi Bars", answer_ids: [] },
-  { name: "Tapas Bars", answer_ids: [] },
+  { name: "Steakhouses", answer_ids: [84, 102, 93, 95, 117] },
+  { name: "Supper Clubs", answer_ids: [105] },
+  { name: "Sushi Bars", answer_ids: [110, 116] },
+  { name: "Tapas Bars", answer_ids: [110] },
   { name: "Wok", answer_ids: [] },
   {
     name: "Afghan",
-    answer_ids: [82]
+    answer_ids: [82, 113, 134]
   },
   {
     name: "African",
@@ -62,39 +62,36 @@ let options = [
   },
   {
     name: "South African",
-    answer_ids: []
+    answer_ids: [104, 110, 134]
   },
   {
     name: "American",
-    answer_ids: [81, 83, 87, 89, 100]
+    answer_ids: [81, 83, 87, 89, 100, 109, 121, 132, 136]
   },
-  {
-    name: "Afghan",
-    answer_ids: [82]
-  },
+
   {
     name: "Arabian",
-    answer_ids: [90]
+    answer_ids: [90, 104, 112]
   },
   {
     name: "Argentine",
-    answer_ids: [91]
+    answer_ids: [91, 111]
   },
   {
     name: "Armenian",
-    answer_ids: [82, 90]
+    answer_ids: [82, 90, 103, 112]
   },
   {
     name: "Australian",
-    answer_ids: [89, 93]
+    answer_ids: [89, 93, 111, 134, 135]
   },
   {
     name: "Austrian",
-    answer_ids: [89, 93]
+    answer_ids: [89, 93, 112]
   },
   {
     name: "Bangladeshi",
-    answer_ids: [82, 92, 98]
+    answer_ids: [82, 92, 98, 113, 134]
   },
   {
     name: "ּBelgian",
@@ -102,35 +99,35 @@ let options = [
   },
   {
     name: "Flemish",
-    answer_ids: [89]
+    answer_ids: [89, 110]
   },
   {
     name: "Brazilian",
-    answer_ids: [91]
+    answer_ids: [91, 104, 137]
   },
   {
     name: "British",
-    answer_ids: [89, 97]
+    answer_ids: [89, 97, 109, 132, 134, 130]
   },
   {
     name: "Bulgarian",
-    answer_ids: [90]
+    answer_ids: [90, 111]
   },
   {
     name: "Cajun/Creole",
-    answer_ids: [82]
+    answer_ids: [82, 113]
   },
   {
     name: "Cambodian",
-    answer_ids: [92, 98]
+    answer_ids: [92, 98, 112]
   },
   {
     name: "Canadian",
-    answer_ids: [89]
+    answer_ids: [89, 109, 135]
   },
   {
     name: "Caribbean",
-    answer_ids: [90]
+    answer_ids: [90, 111]
   },
   {
     name: "Dominican",
@@ -138,11 +135,11 @@ let options = [
   },
   {
     name: "Haitian",
-    answer_ids: []
+    answer_ids: [112]
   },
   {
     name: "Puerto Rican",
-    answer_ids: []
+    answer_ids: [104]
   },
   {
     name: "Chilean",
@@ -150,31 +147,31 @@ let options = [
   },
   {
     name: "Chinese",
-    answer_ids: [91, 96, 98]
+    answer_ids: [91, 96, 98, 110]
   },
   {
     name: "Cuban",
-    answer_ids: [82, 99]
+    answer_ids: [82, 99, 110, 137]
   },
   {
     name: "Czech",
-    answer_ids: []
+    answer_ids: [111]
   },
   {
     name: "Danish",
-    answer_ids: []
+    answer_ids: [111]
   },
   {
     name: "Eastern European",
-    answer_ids: [89, 97]
+    answer_ids: [89, 97, 110]
   },
   {
     name: "Ethiopian",
-    answer_ids: [92]
+    answer_ids: [92, 103]
   },
   {
     name: "Filipino",
-    answer_ids: [82, 98]
+    answer_ids: [82, 98, 111]
   },
   {
     name: "French",
@@ -182,35 +179,35 @@ let options = [
   },
   {
     name: "Georgian",
-    answer_ids: [82]
+    answer_ids: [82, 113]
   },
   {
     name: "German",
-    answer_ids: [89]
+    answer_ids: [89, 132]
   },
   {
     name: "Greek",
-    answer_ids: [90]
+    answer_ids: [90, 104]
   },
   {
     name: "Guamanian",
-    answer_ids: [82, 99]
+    answer_ids: [82, 99, 113]
   },
   {
     name: "Hawaiian",
-    answer_ids: [89]
+    answer_ids: [89, 103]
   },
   {
     name: "Honduran",
-    answer_ids: [82, 99]
+    answer_ids: [82, 99, 113]
   },
   {
     name: "Hungarian",
-    answer_ids: [89]
+    answer_ids: [89, 104, 111]
   },
   {
     name: "Iberian",
-    answer_ids: [90]
+    answer_ids: [90, 112]
   },
   {
     name: "Indian",
@@ -218,11 +215,11 @@ let options = [
   },
   {
     name: "Indonesian",
-    answer_ids: [92, 98]
+    answer_ids: [92, 98, 113]
   },
   {
     name: "Irish",
-    answer_ids: [90]
+    answer_ids: [90, 134]
   },
   {
     name: "Israeli",
@@ -230,16 +227,16 @@ let options = [
   },
   {
     name: "Italian",
-    answer_ids: [83, 90]
+    answer_ids: [83, 90, 104]
   },
 
   {
     name: "Japanese",
-    answer_ids: [96]
+    answer_ids: [96, 111, 134, 116]
   },
   {
     name: "Japanese Curry",
-    answer_ids: [82, 91]
+    answer_ids: [82, 91, 112]
   },
   {
     name: "Western Style Japanese Food",
@@ -251,7 +248,7 @@ let options = [
   },
   {
     name: "Korean",
-    answer_ids: [91, 96]
+    answer_ids: [91, 96, 111, 132]
   },
   {
     name: "Latin American",
@@ -259,7 +256,7 @@ let options = [
   },
   {
     name: "Colombian",
-    answer_ids: [91]
+    answer_ids: [91, 132, 137]
   },
   {
     name: "Salvadoran",
@@ -271,7 +268,7 @@ let options = [
   },
   {
     name: "Malaysian",
-    answer_ids: [82, 92, 98]
+    answer_ids: [82, 92, 98, 113]
   },
   {
     name: "Mediterranean",
@@ -279,7 +276,7 @@ let options = [
   },
   {
     name: "Mexican",
-    answer_ids: [91, 99]
+    answer_ids: [91, 99, 120]
   },
   {
     name: "Middle Eastern",
@@ -303,7 +300,7 @@ let options = [
   },
   {
     name: "Mongolian",
-    answer_ids: [90]
+    answer_ids: [90, 111]
   },
   {
     name: "Moroccan",
@@ -311,11 +308,11 @@ let options = [
   },
   {
     name: "New Mexican Cuisine",
-    answer_ids: [91]
+    answer_ids: [91, 111, 120]
   },
   {
     name: "New Zealand",
-    answer_ids: [82, 93]
+    answer_ids: [82, 93, 134]
   },
   {
     name: "Nicaraguan",
@@ -323,11 +320,11 @@ let options = [
   },
   {
     name: "Oriental",
-    answer_ids: [91]
+    answer_ids: [91, 111]
   },
   {
     name: "Pakistani",
-    answer_ids: [82]
+    answer_ids: [82, 113, 134]
   },
   {
     name: "Pan Asian",
@@ -339,7 +336,7 @@ let options = [
   },
   {
     name: "Persian/Iranian",
-    answer_ids: [91]
+    answer_ids: [91, 113]
   },
   {
     name: "Peruvian",
@@ -359,7 +356,7 @@ let options = [
   },
   {
     name: "Russian",
-    answer_ids: [89, 97]
+    answer_ids: [89, 97, 134]
   },
   {
     name: "Scandinavian",
@@ -371,7 +368,7 @@ let options = [
   },
   {
     name: "Seafood",
-    answer_ids: []
+    answer_ids: [116]
   },
   {
     name: "Singaporean",
@@ -379,11 +376,11 @@ let options = [
   },
   {
     name: "Slovakian",
-    answer_ids: [82, 89]
+    answer_ids: [82, 89, 113]
   },
   {
     name: "Somali",
-    answer_ids: [82, 92]
+    answer_ids: [82, 92, 113]
   },
   {
     name: "Southern",
@@ -391,15 +388,15 @@ let options = [
   },
   {
     name: "Spanish",
-    answer_ids: [91]
+    answer_ids: [91, 111, 112, 120, 137]
   },
   {
     name: "Sri Lankan",
-    answer_ids: [82, 92, 98]
+    answer_ids: [82, 92, 98, 113, 134]
   },
   {
     name: "Swedish",
-    answer_ids: [89]
+    answer_ids: [89, 132]
   },
   {
     name: "Swiss Food",
@@ -407,7 +404,7 @@ let options = [
   },
   {
     name: "Syrian",
-    answer_ids: [91]
+    answer_ids: [91, 103]
   },
   {
     name: "Taiwanese",
@@ -415,7 +412,7 @@ let options = [
   },
   {
     name: "Tex-Mex",
-    answer_ids: [90]
+    answer_ids: [90, 111, 120]
   },
   {
     name: "Thai",
@@ -431,7 +428,7 @@ let options = [
   },
   {
     name: "Turkish",
-    answer_ids: [90]
+    answer_ids: [90, 111]
   },
   {
     name: "Ukrainian",
@@ -443,7 +440,7 @@ let options = [
   },
   {
     name: "Vietnamese",
-    answer_ids: [89, 98]
+    answer_ids: [89, 98, 112]
   },
   {
     name: "Gluten-Free",
@@ -459,11 +456,11 @@ let options = [
   },
   {
     name: "Vegan",
-    answer_ids: []
+    answer_ids: [118, 146, 147, 148, 150, 114]
   },
   {
     name: "Vegetarian",
-    answer_ids: [87]
+    answer_ids: [87, 118, 146, 147, 148, 150, 114]
   },
   {
     name: "Asian Fusion",
@@ -471,7 +468,7 @@ let options = [
   },
   {
     name: "Baguettes",
-    answer_ids: [89]
+    answer_ids: [89, 104, 124]
   },
   {
     name: "Barbeque",
@@ -479,7 +476,7 @@ let options = [
   },
   {
     name: "Pancakes",
-    answer_ids: [89, 96]
+    answer_ids: [89, 96, 103, 126]
   },
   {
     name: "Burgers",
@@ -491,7 +488,7 @@ let options = [
   },
   {
     name: "Chicken Wings",
-    answer_ids: [91, 100]
+    answer_ids: [91, 100, 104, 122]
   },
   {
     name: "Curry Sausage",
@@ -503,7 +500,7 @@ let options = [
   },
   {
     name: "Fish & Chips",
-    answer_ids: [89]
+    answer_ids: [89, 104, 131, 116]
   },
   {
     name: "Flatbread",
@@ -511,15 +508,15 @@ let options = [
   },
   {
     name: "Fondue",
-    answer_ids: []
+    answer_ids: [126]
   },
   {
     name: "Game Meat",
-    answer_ids: [93]
+    answer_ids: [93, 117]
   },
   {
     name: "Hot Dogs",
-    answer_ids: [90, 94]
+    answer_ids: [90, 94, 123]
   },
   {
     name: "Ramen",
@@ -527,7 +524,7 @@ let options = [
   },
   {
     name: "Tempura",
-    answer_ids: []
+    answer_ids: [121, 138, 139, 140, 141, 149]
   },
   {
     name: "Kebab",
@@ -535,27 +532,27 @@ let options = [
   },
   {
     name: "Live/Raw Food",
-    answer_ids: []
+    answer_ids: [123, 116]
   },
   {
     name: "Meatballs",
-    answer_ids: [93]
+    answer_ids: [93, 123, 117]
   },
   {
     name: "Falafel",
-    answer_ids: [90]
+    answer_ids: [90, 104]
   },
   {
     name: "Tacos",
-    answer_ids: [91, 94, 99]
+    answer_ids: [91, 94, 99, 104, 120]
   },
   {
     name: "Pita",
-    answer_ids: [89]
+    answer_ids: [89, 124]
   },
   {
     name: "Pizza",
-    answer_ids: [83, 94]
+    answer_ids: [83, 94, 151, 152, 153]
   },
   {
     name: "Polish",
@@ -567,11 +564,11 @@ let options = [
   },
   {
     name: "Potatoes",
-    answer_ids: [89, 97]
+    answer_ids: [89, 97, 104]
   },
   {
     name: "Rice",
-    answer_ids: [89, 98, 99]
+    answer_ids: [89, 98, 99, 104]
   },
   {
     name: "Rotisserie Chicken",
@@ -579,15 +576,15 @@ let options = [
   },
   {
     name: "Salad",
-    answer_ids: [89, 102]
+    answer_ids: [89, 102, 118, 125, 146, 147, 148, 150, 114]
   },
   {
     name: "Sandwiches",
-    answer_ids: [89, 101]
+    answer_ids: [89, 101, 124]
   },
   {
     name: "Schnitzel",
-    answer_ids: [89, 101]
+    answer_ids: [89, 101, 121]
   },
   {
     name: "Soup",
@@ -599,10 +596,10 @@ let options = [
   },
   {
     name: "Waffles",
-    answer_ids: [89, 96]
+    answer_ids: [89, 96, 103, 126]
   },
   {
     name: "Wraps",
-    answer_ids: [89, 101]
+    answer_ids: [89, 101, 104]
   }
 ];
