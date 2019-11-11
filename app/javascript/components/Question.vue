@@ -4,12 +4,7 @@
     <div class="m/c" v-if="this.questionFormatId === 1 || 3">
       <form action="">
         <div v-for="option in answers">
-          <input
-            type="radio"
-            name="answer"
-            :value="option.id"
-            id="option-input"
-          />
+          <input type="radio" name="answer" :value="option.id" id="option-input" />
           {{ option.option }}
         </div>
       </form>
@@ -82,10 +77,9 @@ export default {
       console.log(this.counter);
     },
     sendSelectedAnswerIds: function() {
+      window.location.href = "/#/results";
       let params = { searchFilterIds: this.selectedAnswerIds };
-      axios
-        .post("/api/results", params)
-        .then(response => console.log(response.data));
+      axios.post("/#/results").then(response => console.log(response.data));
     }
   }
 };
