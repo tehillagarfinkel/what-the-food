@@ -1,10 +1,14 @@
 <template>
   <div id="app">
-    <router-link to="/">Home</router-link>
-    <router-link to="/login">Login</router-link>
-    <router-link to="/signup">Signup</router-link>
-    <p>{{ message }}</p>
-    <router-view></router-view>
+    <nav class="nav">
+      <router-link to="/" class="nav-link">Home</router-link>
+      <router-link to="/login" class="nav-link">Login</router-link>
+      <router-link to="/signup" class="nav-link">Signup</router-link>
+    </nav>
+
+    <body class="bg">
+      <router-view></router-view>
+    </body>
   </div>
 </template>
 
@@ -22,5 +26,17 @@ export default {
 p {
   font-size: 2em;
   text-align: center;
+}
+
+body,
+html {
+  height: 100%;
+}
+.bg {
+  background-image: url("https://images.unsplash.com/photo-1561758033-d89a9ad46330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
