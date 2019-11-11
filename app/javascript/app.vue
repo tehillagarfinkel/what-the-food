@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    <router-link to="/">Home</router-link>
-    <router-link to="/login">Login</router-link>
-    <router-link to="/signup">Signup</router-link>
+    <nav class="nav">
+      <router-link to="/" class="nav-link">Home</router-link>
+      <router-link to="/login" class="nav-link">Login</router-link>
+      <router-link to="/signup" class="nav-link">Signup</router-link>
+    </nav>
+
     <p>{{ message }}</p>
     <router-view></router-view>
   </div>

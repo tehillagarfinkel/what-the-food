@@ -13,6 +13,8 @@ import App from "../app.vue";
 import VueRouter from "vue-router";
 Vue.use(VueRouter);
 import axios from "axios";
+import "bootstrap";
+import "../stylesheets/application";
 
 import Login from "../components/Login";
 import Signup from "../components/Signup";
@@ -30,6 +32,10 @@ const routes = [
 
 const router = new VueRouter({ routes });
 
+document.addEventListener("turbolinks:load", () => {
+  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
+});
 document.addEventListener("DOMContentLoaded", () => {
   const app = new Vue({
     router,
