@@ -1,10 +1,18 @@
 <template>
   <div class="Home">
-    <img src="" alt="" />
-    <input type="text" v-model="zip" />
-    <router-link to="Question">
-      <button v-on:click="start()">WTF am I hungry for?!</button>
-    </router-link>
+    <div class="jumbotron text-center">
+      <h1 class="display-4">What the Food?!</h1>
+      <p class="lead">
+        You're hungry. We're here to help.
+      </p>
+      <p>(Because decisions are hard.)</p>
+      <hr class="my-4" />
+      <img src="" alt="" />
+      <input type="text" v-model="zip" />
+      <router-link to="Question">
+        <button class="btn btn-primary btn" v-on:click="start()">WTF am I hungry for?!</button>
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -25,4 +33,3 @@ export default {
 </script>
 
 <style scoped></style>
-

@@ -1,33 +1,33 @@
 <template>
   <div class="question">
-    <h1>{{ query }}</h1>
-    <div class="m/c" v-if="this.questionFormatId === 1 || 3">
-      <form action="">
-        <div v-for="option in answers">
-          <input
-            type="radio"
-            name="answer"
-            :value="option.id"
-            id="option-input"
-          />
-          {{ option.option }}
-        </div>
-      </form>
-    </div>
-    <div class="slider" v-if="questionFormatId === 2">
-      <div>
-        <input v-model="rangeValue" type="range" min="1" max="5" />
-        <p>{{ answers[rangeValue - 1] }}</p>
+    <div class="jumbotron text-center">
+      <h3 class="lead">
+        {{ query }}
+      </h3>
+      <hr class="my-4" />
+      <div class="m/c" v-if="this.questionFormatId === 1 || 3">
+        <form action="">
+          <div v-for="option in answers">
+            <input type="radio" name="answer" :value="option.id" id="option-input" />
+            {{ option.option }}
+          </div>
+        </form>
       </div>
-    </div>
-
-    <div v-if="counter < 3">
-      <button v-on:click="submit()">Next Question...</button>
-    </div>
-    <div v-if="counter >= 3">
-      <!-- <router-link to="Results"> -->
-      <button @click="sendSelectedAnswerIds()">Show My Results</button>
-      <!-- </router-link> -->
+      <div class="slider" v-if="questionFormatId === 2">
+        <div>
+          <input v-model="rangeValue" type="range" min="1" max="5" />
+          <p>{{ answers[rangeValue - 1] }}</p>
+        </div>
+      </div>
+      <hr />
+      <div v-if="counter < 3">
+        <button v-on:click="submit()">Next Question...</button>
+      </div>
+      <div v-if="counter >= 3">
+        <!-- <router-link to="Results"> -->
+        <button @click="sendSelectedAnswerIds()">Show My Results</button>
+        <!-- </router-link> -->
+      </div>
     </div>
   </div>
 </template>
@@ -83,9 +83,7 @@ export default {
     },
     sendSelectedAnswerIds: function() {
       let params = { searchFilterIds: this.selectedAnswerIds };
-      axios
-        .post("/api/results", params)
-        .then(response => console.log(response.data));
+      axios.post("/api/results", params).then(response => console.log(response.data));
     }
   }
 };
