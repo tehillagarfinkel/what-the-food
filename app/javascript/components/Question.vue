@@ -77,6 +77,21 @@ export default {
       console.log(this.counter);
     },
     sendSelectedAnswerIds: function() {
+      let id;
+      if (this.questionFormatId === 2) {
+        const answer = this.answers[this.rangeValue - 1];
+        id = answer.id;
+      } else {
+        const input = document.querySelector("#option-input");
+        id = input.value;
+      }
+      this.selectedAnswerIds.push(id);
+      console.log(this.selectedAnswerIds);
+      var occurrences = {};
+      for (var i = 0, j = this.selectedAnswerIds.length; i < j; i++) {
+        occurrences[this.selectedAnswerIds[i]] = (occurrences[this.selectedAnswerIds[i]] || 0) + 1;
+      }
+      console.log(occurrences);
       window.location.href = "/#/results";
       let params = { searchFilterIds: this.selectedAnswerIds };
       axios.post("/#/results").then(response => console.log(response.data));

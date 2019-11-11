@@ -10,6 +10,10 @@ class Api::ResultsController < ApplicationController
       .get("https://api.yelp.com/v3/businesses/search", params: { location: 60601, radius: 4000, open_now: true, categories: "Restaurants" })
       .parse
 
+    # selectedAnswerIds.map { |id|
+    #   option.filter { |option| option["name"] if option["answer_ids"].include?(id) }
+    # }
+    @restaurants.sort_by()
     render "index.json.jb"
   end
 
