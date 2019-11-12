@@ -18,16 +18,23 @@ class Api::ResultsController < ApplicationController
   end
 
   def create
-    # puts search_filters
-    # searchParams = {}
-    # params[searchFilterIds]
+    results = {}
 
-    @selected = search_filters.filter { |filter|
-      answer_ids = filter[:answer_ids].map { |id|
-        params[:searchFilterIds].include?(id)
-      }
-      answer_ids.length > 0
-    }
-    render json: @selected
+    params[:answerIds].each do |id|
+      search_filters.each do |search_filter|
+        if search_filter[:answer_ids].include?(id)
+          if results[search_filter[:name]]
+            results[search_filter[:name]] += 1
+          else
+            results[search_filter[:name]] = 1
+          end
+        end
+      end
+    end
+
+    render json: results
+    .sort_by( |key, value| value ) 
+    .reverse.take(3)
+    .to_h
   end
 end
