@@ -29,9 +29,7 @@
         <button v-on:click="submit()">Next Question...</button>
       </div>
       <div v-if="counter >= 20">
-        <!-- <router-link to="Results"> -->
         <button @click="sendSelectedAnswerIds()">Show My Results</button>
-        <!-- </router-link> -->
       </div>
     </div>
   </div>
@@ -58,8 +56,6 @@ export default {
   mounted: function() {
     this.loadQuestion();
     var zip = localStorage.getItem("zip");
-    console.log(zip);
-    console.log(this.counter);
   },
 
   methods: {
@@ -82,11 +78,9 @@ export default {
       let number = Math.floor(Math.random() * 96) + 1;
 
       while (this.exclusions.includes(number)) {
-        console.log(number);
         number = Math.floor(Math.random() * 96) + 1;
       }
 
-      console.log(this.exclusions);
       var params = {
         number: number
       };
@@ -109,7 +103,6 @@ export default {
         id = input.value;
       }
       this.selectedAnswerIds.push(id);
-      console.log(this.selectedAnswerIds);
 
       // var occurrences = {};
       // for (var i = 0, j = this.selectedAnswerIds.length; i < j; i++) {
@@ -117,9 +110,17 @@ export default {
       // }
       // console.log(occurrences);
 
-      window.location.href = "/#/results";
-      let params = { searchFilterIds: this.selectedAnswerIds };
-      axios.post("/#/results").then(response => console.log(response.data));
+      let params = {
+        answerIds: this.selectedAnswerIds,
+        location: localStorage.getItem("zip")
+      };
+      axios.post("/api/results", params).then(response => {
+        console.log(response.data);
+        this.$router.push({
+          name: "results",
+          params: { restaurants: response.data }
+        });
+      });
     }
   }
 };
