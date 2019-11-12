@@ -8,12 +8,7 @@
       <div class="m/c" v-if="this.questionFormatId === 1 || 3">
         <form action="">
           <div v-for="option in answers">
-            <input
-              type="radio"
-              name="answer"
-              :value="option.id"
-              id="option-input"
-            />
+            <input type="radio" name="answer" :value="option.id" id="option-input" />
             {{ option.option }}
           </div>
         </form>
@@ -64,6 +59,8 @@ export default {
 
   methods: {
     submit: function() {
+      var ele = document.getElementsByName("answer");
+      for (var i = 0; i < ele.length; i++) ele[i].checked = false;
       let id;
       if (this.questionFormatId === 2) {
         const answer = this.answers[this.rangeValue - 1];
@@ -114,7 +111,7 @@ export default {
       //   occurrences[this.selectedAnswerIds[i]] = (occurrences[this.selectedAnswerIds[i]] || 0) + 1;
       // }
       // console.log(occurrences);
-      
+
       window.location.href = "/#/results";
       let params = { searchFilterIds: this.selectedAnswerIds };
       axios.post("/#/results").then(response => console.log(response.data));
