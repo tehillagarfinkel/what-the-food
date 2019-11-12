@@ -32,9 +32,26 @@ class Api::ResultsController < ApplicationController
       end
     end
 
-    render json: results
-             .sort_by { |key, value| value }
-             .reverse.take(3)
-             .to_h
+    categories = results
+      .sort_by { |key, value| value }
+      .reverse
+      .take(3)
+      .to_h
+      .keys
+      .map { |value| value.downcase.gsub(/[\W]/, "") }
+      .join(",")
+
+    puts categories
+
+    @restaurants = HTTP
+      .headers({
+        "X-User-Email" => ENV["YELP_API_EMAIL"],
+        "Authorization" => "Bearer #{ENV["YELP_API_KEY"]}",
+      })
+      .get("https://api.yelp.com/v3/businesses/search", params: { location: 60601, radius: 4000, open_now: true, categories: "#{categories}" })
+      .parse
+
+    @restaurants.sort_by()
+    render "index.json.jb"
   end
 end
