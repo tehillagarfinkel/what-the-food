@@ -517,142 +517,177 @@ def search_filters
     },
     {
       name: "Asian Fusion",
+      alias: "asianfusion",
       answer_ids: [2, 27, 47, 57, 160, 246, 315, 267, 315],
     },
     {
       name: "Baguettes",
+      alias: "baguettes",
       answer_ids: [28, 36, 49, 314, 349, 89, 104, 124],
     },
     {
       name: "Barbeque",
+      alias: "barbeque",
       answer_ids: [36, 50, 54, 58, 59, 78, 80, 156, 160, 279, 306, 279, 311, 340, 90, 93, 94],
     },
     {
       name: "Pancakes",
+      alias: "pancakes",
       answer_ids: [12, 13, 56, 58, 63, 96, 171, 296, 283, 89, 103, 126],
     },
     {
       name: "Burgers",
+      alias: "burgers",
       answer_ids: [36, 50, 55, 60, 80, 100, 160, 306, 278, 294, 311, 328, 340, 349, 89, 100, 93, 94],
     },
     {
       name: "Cheesesteaks",
+      alias: "cheesesteaks",
       answer_ids: [25, 36, 55, 57, 160, 298, 306, 294, 311, 349, 89, 100, 102, 93],
     },
     {
       name: "Chicken Wings",
+      alias: "chickenwings",
       answer_ids: [25, 35, 50, 53, 157, 160, 298, 306, 279, 290, 291, 306, 311, 91, 100, 104, 122],
     },
     {
       name: "Curry Sausage",
+      alias: "currysausages",
       answer_ids: [36, 57, 69, 80, 267, 311, 92],
     },
     {
       name: "Dumplings",
+      alias: "dumplings",
       answer_ids: [26, 36, 52, 59, 160, 293, 348],
     },
     {
       name: "Fish & Chips",
+      alias: "fish&chips",
       answer_ids: [36, 57, 72, 160, 89, 104, 131, 116, 289, 290, 294, 310],
     },
     {
       name: "Flatbread",
+      alias: "flatbread",
       answer_ids: [36, 55, 160, 87, 89],
     },
     {
       name: "Fondue",
+      alias: "fondue",
       answer_ids: [36, 49, 50, 52, 55, 314, 126, 269],
     },
     {
       name: "Game Meat",
+      alias: "gamemeat",
       answer_ids: [36, 50, 67, 80, 160, 298, 93, 117, 288, 311, 335, 351],
     },
     {
       name: "Hot Dogs",
+      alias: "hotdog",
       answer_ids: [25, 36, 45, 50, 60, 80, 154, 298, 304, 306, 90, 94, 123, 268, 269, 270, 271, 272, 273, 306, 311, 328, 349],
     },
     {
       name: "Ramen",
+      alias: "ramen",
       answer_ids: [36, 43, 47, 57, 59, 160, 267, 315],
     },
     {
       name: "Tempura",
+      alias: "tempura",
       answer_ids: [47, 51, 57, 111, 267, 315, 121, 138, 139, 140, 141, 149],
     },
     {
       name: "Kebab",
+      alias: "kebab",
       answer_ids: [35, 48, 80, 111, 160, 267, 316, 349, 91],
     },
     {
       name: "Live/Raw Food",
+      alias: "liverawfood",
       answer_ids: [34, 44, 52, 112, 160, 335, 123, 116],
     },
     {
       name: "Meatballs",
+      alias: "meatballs",
       answer_ids: [36, 80, 160, 298, 318, 311, 318, 348, 93, 123, 117],
     },
     {
       name: "Falafel",
+      alias: "falafel",
       answer_ids: [36, 43, 48, 57, 267, 316, 348, 90, 104],
     },
     {
       name: "Tacos",
+      alias: "tacos",
       answer_ids: [26, 36, 50, 56, 99, 160, 307, 308, 267, 328, 349, 91, 94, 99, 104, 120],
     },
     {
       name: "Pita",
+      alias: "pita",
       answer_ids: [21, 36, 48, 160, 267, 316, 349, 89, 124],
     },
     {
       name: "Pizza",
+      alias: "pizza",
       answer_ids: [25, 36, 50, 55, 149, 153, 309, 318, 328, 326, 83, 94, 151, 152, 153],
     },
     {
       name: "Polish",
+      alias: "polish",
       answer_ids: [36, 72, 160, 268, 268, 293, 311, 317, 89, 97],
     },
     {
       name: "Pierogis",
+      alias: "pierogis",
       answer_ids: [36, 52, 57, 72, 268, 293, 267, 293, 317, 348, 89],
     },
     {
       name: "Potatoes",
+      alias: "potatoes",
       answer_ids: [36, 57, 97, 147, 57, 160, 278, 279, 280, 281, 312, 348, 89, 97, 104],
     },
     {
       name: "Rice",
+      alias: "rice",
       answer_ids: [37, 47, 57, 98, 160, 291, 312, 315, 89, 98, 99, 104],
     },
     {
       name: "Rotisserie Chicken",
+      alias: "rotisserie_chicken",
       answer_ids: [36, 57, 80, 149, 160, 298, 295, 311, 89, 100, 101],
     },
     {
       name: "Salad",
+      alias: "salad",
       answer_ids: [34, 37, 51, 110, 167, 305, 291, 312, 327, 339, 89, 102, 118, 125, 146, 147, 148, 150, 114],
     },
     {
       name: "Sandwiches",
+      alias: "sandwiches",
       answer_ids: [36, 50, 55, 110, 294, 328, 349, 89, 101, 124],
     },
     {
       name: "Schnitzel",
+      alias: "schnitzel",
       answer_ids: [36, 49, 57, 70, 72, 267, 268, 293],
     },
     {
       name: "Soup",
+      alias: "soup",
       answer_ids: [36, 57, 70, 160, 212, 213, 214, 215, 216, 291],
     },
     {
       name: "Tapas/Small Plates",
+      alias: "tapassmallplates",
       answer_ids: [22, 36, 57, 59, 70, 111, 90],
     },
     {
       name: "Waffles",
+      alias: "waffles",
       answer_ids: [12, 13, 56, 58, 63, 96, 171, 297, 282, 283, 297, 89, 96, 103, 126],
     },
     {
       name: "Wraps",
+      alias: "wraps",
       answer_ids: [14, 34, 51, 294, 327, 349, 89, 101, 104],
     },
   ]
