@@ -25,10 +25,10 @@
       </form>
 
       <hr />
-      <div v-if="counter < 3">
+      <div v-if="counter < 20">
         <button v-on:click="submit()">Next Question...</button>
       </div>
-      <div v-if="counter >= 3">
+      <div v-if="counter >= 20">
         <!-- <router-link to="Results"> -->
         <button @click="sendSelectedAnswerIds()">Show My Results</button>
         <!-- </router-link> -->
@@ -48,6 +48,7 @@ export default {
       counter: 0,
       query: "",
       answers: [],
+      exclusions: [27, 33, 37, 38, 42, 49, 73],
       option: "",
       rangeValue: 3,
       searchFilterId: "",
@@ -76,14 +77,24 @@ export default {
       this.loadQuestion();
     },
     loadQuestion: function() {
+      let number = Math.floor(Math.random() * 96) + 1;
+
+      while (this.exclusions.includes(number)) {
+        console.log(number);
+        number = Math.floor(Math.random() * 96) + 1;
+      }
+
+      console.log(this.exclusions);
       var params = {
-        number: Math.floor(Math.random() * 96) + 1
+        number: number
       };
+
       axios.get("/api/questions/" + params["number"]).then(response => {
         this.query = response.data.query;
         this.answers = response.data.answers;
       });
       this.counter += 1;
+      this.exclusions.push(number);
       console.log(this.counter);
     },
     sendSelectedAnswerIds: function() {
@@ -97,11 +108,13 @@ export default {
       }
       this.selectedAnswerIds.push(id);
       console.log(this.selectedAnswerIds);
-      var occurrences = {};
-      for (var i = 0, j = this.selectedAnswerIds.length; i < j; i++) {
-        occurrences[this.selectedAnswerIds[i]] = (occurrences[this.selectedAnswerIds[i]] || 0) + 1;
-      }
-      console.log(occurrences);
+
+      // var occurrences = {};
+      // for (var i = 0, j = this.selectedAnswerIds.length; i < j; i++) {
+      //   occurrences[this.selectedAnswerIds[i]] = (occurrences[this.selectedAnswerIds[i]] || 0) + 1;
+      // }
+      // console.log(occurrences);
+
       window.location.href = "/#/results";
       let params = { searchFilterIds: this.selectedAnswerIds };
       axios.post("/#/results").then(response => console.log(response.data));
