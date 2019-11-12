@@ -33,8 +33,8 @@ class Api::ResultsController < ApplicationController
     end
 
     render json: results
-    .sort_by( |key, value| value ) 
-    .reverse.take(3)
-    .to_h
+             .sort_by { |key, value| value }
+             .reverse.take(3)
+             .to_h
   end
 end
