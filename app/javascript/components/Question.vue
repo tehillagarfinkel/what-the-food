@@ -108,12 +108,13 @@ export default {
       }
       this.selectedAnswerIds.push(id);
       console.log(this.selectedAnswerIds);
-      var occurrences = {};
-      for (var i = 0, j = this.selectedAnswerIds.length; i < j; i++) {
-        occurrences[this.selectedAnswerIds[i]] =
-          (occurrences[this.selectedAnswerIds[i]] || 0) + 1;
-      }
-      console.log(occurrences);
+
+      // var occurrences = {};
+      // for (var i = 0, j = this.selectedAnswerIds.length; i < j; i++) {
+      //   occurrences[this.selectedAnswerIds[i]] = (occurrences[this.selectedAnswerIds[i]] || 0) + 1;
+      // }
+      // console.log(occurrences);
+      
       window.location.href = "/#/results";
       let params = { searchFilterIds: this.selectedAnswerIds };
       axios.post("/#/results").then(response => console.log(response.data));
