@@ -64,6 +64,8 @@ export default {
 
   methods: {
     submit: function() {
+      var ele = document.getElementsByName("answer");
+      for (var i = 0; i < ele.length; i++) ele[i].checked = false;
       let id;
       if (this.questionFormatId === 2) {
         const answer = this.answers[this.rangeValue - 1];
