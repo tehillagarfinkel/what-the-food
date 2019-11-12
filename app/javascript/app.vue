@@ -48,14 +48,14 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title" id="signUpModalLabel">Sign Up</h3>
+            <h3 class="modal-title logo" id="signUpModalLabel">Sign Up</h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <div class="signup">
-              <div class="container">
+              <div class="container opensans">
                 <form v-on:submit.prevent="submit()">
                   <ul>
                     <li class="text-danger" v-for="error in errors">{{ error }}</li>
@@ -76,7 +76,7 @@
                     <label>Password confirmation:</label>
                     <input type="password" class="form-control" v-model="passwordConfirmation" />
                   </div>
-                  <input type="submit" class="btn btn-primary" value="Submit" />
+                  <input type="submit" class="btn btn-outline-secondary" value="Submit" />
                 </form>
               </div>
             </div>
@@ -98,12 +98,12 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title" id="loginModalLabel">Login Info</h3>
+            <h3 class="modal-title logo" id="loginModalLabel">Login Info</h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body opensans">
             <div class="login">
               <div class="container">
                 <form v-on:submit.prevent="submit()">
@@ -118,7 +118,7 @@
                     <label>Password:</label>
                     <input type="password" class="form-control" v-model="password" />
                   </div>
-                  <input type="submit" class="btn btn-primary" value="Submit" />
+                  <input type="submit" class="btn btn-outline-secondary" value="Submit" />
                 </form>
               </div>
             </div>
