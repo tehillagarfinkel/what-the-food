@@ -21,7 +21,9 @@
       </div>
     </div>
 
-    <router-link to="Question">Not what you're looking for? Try again.</router-link>
+    <router-link to="Question">
+      Not what you're looking for? Try again.
+    </router-link>
     <button @click="showLess = false">See more results.</button>
   </div>
 </template>
@@ -36,9 +38,10 @@ img {
 <script>
 import axios from "axios";
 export default {
+  props: ["restaurants"],
   data: function() {
     return {
-      restaurants: [],
+      // restaurants: [],
       restaurant: {},
       name: "",
       image_url: "",
@@ -57,10 +60,11 @@ export default {
     };
   },
   mounted: function() {
-    axios.get("/api/results/").then(response => {
-      this.restaurants = response.data;
-      console.log(response.data);
-    });
+    console.log("RESULTS: ", this.restaurants);
+    // axios.get("/api/results/").then(response => {
+    //   this.restaurants = response.data;
+    //   console.log(response.data);
+    // });
   }
 };
 </script>
