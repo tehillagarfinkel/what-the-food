@@ -5,20 +5,25 @@
         {{ query }}
       </h3>
       <hr class="my-4" />
-      <div class="m/c" v-if="this.questionFormatId === 1 || 3">
+      <div class="m/c form-check" v-if="this.questionFormatId === 1 || 3">
         <form action="">
           <div v-for="option in answers">
-            <input type="radio" name="answer" :value="option.id" id="option-input" />
-            {{ option.option }}
+            <input class="form-check-input" type="radio" name="answer" :value="option.id" id="option-input" />
+            <label class="form-check-label" for="option-input">
+              {{ option.option }}
+            </label>
           </div>
         </form>
       </div>
-      <div class="slider" v-if="questionFormatId === 2">
-        <div>
-          <input v-model="rangeValue" type="range" min="1" max="5" />
+
+      <form>
+        <div class="form-group" v-if="questionFormatId === 2">
+          <label for="formControlRange">Example Range input</label>
+          <input v-model="rangeValue" min="1" max="5" type="range" class="form-control-range" id="formControlRange" />
           <p>{{ answers[rangeValue - 1] }}</p>
         </div>
-      </div>
+      </form>
+
       <hr />
       <div v-if="counter < 20">
         <button v-on:click="submit()">Next Question...</button>

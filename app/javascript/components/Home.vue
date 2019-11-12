@@ -3,7 +3,7 @@
     <img
       src="https://www.thoughtco.com/thmb/kvjQ3GOItmnivEhr0Hpx2X27h_A=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/Lol_interrobang-58bcad2e3df78c353c52e72c.png"
     />
-    <h3 class="display-4">What the Food?!</h3>
+    <h3 class="display-4 logo">What.The.Food?!</h3>
     <p class="lead">
       You're hungry. We're here to help.
     </p>
@@ -45,4 +45,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.logo {
+  font-family: "Permanent Marker", cursive;
+  /*font-family: 'Fredericka the Great', cursive;*/
+}
+</style>
