@@ -2,7 +2,7 @@
   <div id="app" class="bg">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow opaque">
-      <div class="container">
+      <div class="container opensans">
         <button
           class="navbar-toggler"
           type="button"
@@ -20,15 +20,112 @@
               <router-link to="/" class="nav-link">Home</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/login" class="nav-link">Login</router-link>
+              <a class="nav-link" data-toggle="modal" data-target="#loginModal">
+                Login
+              </a>
             </li>
             <li class="nav-item">
-              <router-link to="/signup" class="nav-link">Signup</router-link>
+              <a class="nav-link" data-toggle="modal" data-target="#signUpModal">
+                Sign Up
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- Modals ------------------------------------------------------------------------>
+
+    <!-- SIGN UP ---------->
+    <div
+      class="modal fade"
+      id="signUpModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="signUpModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="signUpModalLabel">Sign Up</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="signup">
+              <div class="container">
+                <form v-on:submit.prevent="submit()">
+                  <ul>
+                    <li class="text-danger" v-for="error in errors">{{ error }}</li>
+                  </ul>
+                  <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" class="form-control" v-model="name" />
+                  </div>
+                  <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" class="form-control" v-model="email" />
+                  </div>
+                  <div class="form-group">
+                    <label>Password:</label>
+                    <input type="password" class="form-control" v-model="password" />
+                  </div>
+                  <div class="form-group">
+                    <label>Password confirmation:</label>
+                    <input type="password" class="form-control" v-model="passwordConfirmation" />
+                  </div>
+                  <input type="submit" class="btn btn-primary" value="Submit" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOGIN ---------->
+
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="loginModalLabel">Login Info</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="login">
+              <div class="container">
+                <form v-on:submit.prevent="submit()">
+                  <ul>
+                    <li class="text-danger" v-for="error in errors">{{ error }}</li>
+                  </ul>
+                  <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" class="form-control" v-model="email" />
+                  </div>
+                  <div class="form-group">
+                    <label>Password:</label>
+                    <input type="password" class="form-control" v-model="password" />
+                  </div>
+                  <input type="submit" class="btn btn-primary" value="Submit" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Page Content -->
     <div class="container opaque">
@@ -38,15 +135,45 @@
         </div>
       </div>
     </div>
+    <br />
+    <br />
+    <br />
+    <footer class="logo">
+      <p>Save your decision making for Netflix</p>
+    </footer>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data: function() {
     return {
-      message: "What The Food?!"
+      name: "",
+      email: "",
+      password: "",
+      passwordConfirmation: "",
+      errors: []
     };
+  },
+  methods: {
+    submit: function() {
+      var params = {
+        name: this.name,
+        email: this.email,
+        password: this.password,
+        password_confirmation: this.passwordConfirmation
+      };
+      axios
+        .post("/api/users", params)
+        .then(response => {
+          this.$router.push("/login");
+        })
+        .catch(error => {
+          this.errors = error.response.data.errors;
+        });
+    }
   }
 };
 </script>
@@ -68,5 +195,13 @@ p {
 
 .opaque {
   opacity: 0.9;
+}
+
+.opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+  font-family: "Permanent Marker", cursive;
 }
 </style>

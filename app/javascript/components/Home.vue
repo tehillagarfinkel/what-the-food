@@ -4,13 +4,12 @@
       src="https://www.thoughtco.com/thmb/kvjQ3GOItmnivEhr0Hpx2X27h_A=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/Lol_interrobang-58bcad2e3df78c353c52e72c.png"
     />
     <h3 class="display-4 logo">What.The.Food?!</h3>
-    <p class="lead">
+    <h4 class="opensans">
       You're hungry. We're here to help.
-    </p>
-    <p>(Because decisions are hard.)</p>
-    <hr class="my-4" />
+    </h4>
+    <hr />
 
-    <div class="input-group mb-3">
+    <div class="input-group mb-3 opensans">
       <input
         type="text"
         class="form-control"
@@ -49,5 +48,9 @@ export default {
 .logo {
   font-family: "Permanent Marker", cursive;
   /*font-family: 'Fredericka the Great', cursive;*/
+}
+
+.opensans {
+  font-family: "Open Sans", sans-serif;
 }
 </style>
