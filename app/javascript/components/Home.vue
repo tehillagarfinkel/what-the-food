@@ -7,11 +7,23 @@
       </p>
       <p>(Because decisions are hard.)</p>
       <hr class="my-4" />
-      <img src="" alt="" />
-      <input type="text" v-model="zip" />
-      <router-link to="Question">
-        <button class="btn btn-primary btn" v-on:click="start()">WTF am I hungry for?!</button>
-      </router-link>
+
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter ZIP code"
+          aria-describedby="button-addon2"
+          v-model="zip"
+        />
+        <div class="input-group-append">
+          <router-link to="Question">
+            <button class="btn btn-outline-secondary" id="button-addon2" v-on:click="start()">
+              WTF am I hungry for?!
+            </button>
+          </router-link>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -20,7 +32,7 @@
 export default {
   data: function() {
     return {
-      zip: "Enter ZIP code"
+      zip: ""
     };
   },
   methods: {
