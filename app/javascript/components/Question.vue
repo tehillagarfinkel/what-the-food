@@ -1,41 +1,77 @@
 <template>
   <div class="question">
     <div class="jumbotron text-center">
-      <h3 class="lead">
+      <h1 class="logo sz2">Question {{ counter }}:</h1>
+      <h1 class="lead sz3">
         {{ query }}
-      </h3>
-      <hr class="my-4" />
-      <div class="m/c form-check" v-if="this.questionFormatId === 1 || 3">
-        <form action="">
-          <div v-for="option in answers">
-            <input class="form-check-input" type="radio" name="answer" :value="option.id" id="option-input" />
-            <label class="form-check-label" for="option-input">
-              {{ option.option }}
-            </label>
+      </h1>
+
+      <hr />
+
+      <div class="options">
+        <div class="m/c form-check opensans sz" v-if="this.questionFormatId === 1 || 3">
+          <form action="">
+            <div v-for="option in answers">
+              <input class="form-check-input" type="radio" name="answer" :value="option.id" id="option-input" />
+              <label class="form-check-label" for="option-input">
+                {{ option.option }}
+              </label>
+            </div>
+          </form>
+        </div>
+
+        <form>
+          <div class="form-group opensans sz" v-if="questionFormatId === 2">
+            <label for="formControlRange">Example Range input</label>
+            <input v-model="rangeValue" min="1" max="5" type="range" class="form-control-range" id="formControlRange" />
+            <p class="sz">{{ answers[rangeValue - 1] }}</p>
           </div>
         </form>
       </div>
 
-      <form>
-        <div class="form-group" v-if="questionFormatId === 2">
-          <label for="formControlRange">Example Range input</label>
-          <input v-model="rangeValue" min="1" max="5" type="range" class="form-control-range" id="formControlRange" />
-          <p>{{ answers[rangeValue - 1] }}</p>
-        </div>
-      </form>
-
       <hr />
-      <div v-if="counter < 20">
-        <button v-on:click="submit()">Next Question...</button>
-      </div>
-      <div v-if="counter >= 20">
-        <button @click="sendSelectedAnswerIds()">Show My Results</button>
+
+      <div class="next">
+        <div v-if="counter < 20">
+          <button class="logo btn-lg" v-on:click="submit()">Next Question...</button>
+        </div>
+        <div class="logo btn-lg" v-if="counter >= 20">
+          <button @click="sendSelectedAnswerIds()">Show My Results</button>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<style></style>
+<style>
+.opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+  font-family: "Permanent Marker", cursive;
+}
+
+.sz {
+  font-size: 1.25em;
+}
+
+.sz2 {
+  font-size: 4em;
+}
+
+.sz3 {
+  font-size: 2em;
+}
+.options {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.next {
+  padding-top: 15px;
+}
+</style>
 
 <script>
 import axios from "axios";

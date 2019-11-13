@@ -359,234 +359,292 @@ def search_filters
 
     {
       name: "Japanese",
+      alias: "japanese",
       answer_ids: [2, 37, 47, 96, 111, 134, 116],
     },
     {
       name: "Japanese Curry",
+      alias: "japanesecurry",
       answer_ids: [2, 47, 267, 315, 82, 91, 112],
     },
     {
       name: "Western Style Japanese Food",
+      alias: "westernstylejapanesefood"
       answer_ids: [2, 37, 47, 267, 296, 315, 96],
     },
     {
       name: "Jewish",
+      alias: "jewish"
       answer_ids: [36, 267, 316, 89],
     },
     {
       name: "Korean",
+      alias: "korean",
       answer_ids: [2, 35, 47, 53, 267, 315, 91, 96, 111, 132],
     },
     {
       name: "Latin American",
+      alias: "latinamerican",
       answer_ids: [4, 35, 56, 267, 91],
     },
     {
       name: "Colombian",
+      alias: "colombian",
       answer_ids: [4, 36, 267, 91, 132, 137],
     },
     {
       name: "Salvadoran",
+      alias: "salvadoran",
       answer_ids: [4, 36, 267, 91],
     },
     {
       name: "Venezuelan",
+      alias: "venezuelan",
       answer_ids: [4, 36, 267, 91],
     },
     {
       name: "Malaysian",
+      alias: "malaysian",
       answer_ids: [35, 267, 82, 92, 98, 113],
     },
     {
       name: "Mediterranean",
+      alias: "mediterranean",
       answer_ids: [1, 5, 36, 59, 267, 292, 318, 90],
     },
     {
       name: "Mexican",
+      alias: "mexican",
       answer_ids: [35, 50, 56, 266, 91, 99, 120],
     },
     {
       name: "Middle Eastern",
+      alias: "middleeastern",
       answer_ids: [36, 48, 59, 267, 316, 90],
     },
     {
       name: "Egyptian",
+      alias: "egyptian",
       answer_ids: [35, 48, 267, 316, 82],
     },
     {
       name: "Lebanese",
+      alias: "lebanese",
       answer_ids: [35, 48, 267, 316, 82, 90],
     },
     {
       name: "Modern Australian",
+      alias: "modernaustralian",
       answer_ids: [36, 267, 286, 89],
     },
     {
       name: "Modern European",
+      alias: "moderneuropean",
       answer_ids: [1, 36, 49, 55, 267, 295, 314, 317, 318, 89],
     },
     {
       name: "Mongolian",
+      alias: "mongolian",
       answer_ids: [35, 47, 53, 267, 90, 111],
     },
     {
       name: "Moroccan",
+      alias: "moroccan",
       answer_ids: [35, 48, 53, 59, 267, 91],
     },
     {
       name: "New Mexican Cuisine",
+      alias: "newmexicancuisine",
       answer_ids: [35, 50, 267, 91, 111, 120],
     },
     {
       name: "New Zealand",
+      alias: "newzealand",
       answer_ids: [36, 267, 286, 350, 82, 93, 134],
     },
     {
       name: "Nicaraguan",
+      alias: "nicaraguan",
       answer_ids: [4, 36, 267, 82, 91],
     },
     {
       name: "Oriental",
+      alias: "oriental",
       answer_ids: [2, 35, 47, 267, 91, 111],
     },
     {
       name: "Pakistani",
+      alias: "pakistani",
       answer_ids: [35, 267, 82, 113, 134],
     },
     {
       name: "Pan Asian",
+      alias: "panasian",
       answer_ids: [2, 35, 47, 267, 315, 91, 96],
     },
     {
       name: "Parma",
+      alias: "parma",
       answer_ids: [36, 267, 82],
     },
     {
       name: "Persian/Iranian",
+      alias: "persianiranian",
       answer_ids: [36, 48, 267, 316, 91, 113],
     },
     {
       name: "Peruvian",
+      alias: "peruvian",
       answer_ids: [36, 267, 91],
     },
     {
       name: "Polynesian",
+      alias: "polynesian",
       answer_ids: [35, 266],
     },
     {
       name: "Portuguese",
+      alias: "portuguese",
       answer_ids: [36, 267],
     },
     {
       name: "Romanian",
+      alias: "romanian",
       answer_ids: [36, 267, 268, 293, 317, 82, 89],
     },
     {
       name: "Russian",
+      alias: "russian",
       answer_ids: [36, 267, 89, 97, 134],
     },
     {
       name: "Scandinavian",
+      alias: "scandinavian",
       answer_ids: [36, 267, 89],
     },
     {
       name: "Scottish",
+      alias: "scottish",
       answer_ids: [36, 267, 294, 82, 89],
     },
     {
       name: "Seafood",
+      alias: "seafood",
       answer_ids: [34, 266, 304, 310, 116],
     },
     {
       name: "Singaporean",
+      alias: "singaporean",
       answer_ids: [35, 47, 267, 315, 82, 91],
     },
     {
       name: "Slovakian",
+      alias: "slovakian",
       answer_ids: [36, 267, 268, 293, 317, 82, 89, 113],
     },
     {
       name: "Somali",
+      alias: "somali",
       answer_ids: [35, 48, 267, 82, 92, 113],
     },
     {
       name: "Southern",
+      alias: "southern",
       answer_ids: [3, 36, 50, 55, 267, 279, 280, 89],
     },
     {
       name: "Spanish",
+      alias: "spanish",
       answer_ids: [4, 36, 267, 295, 91, 111, 112, 120, 137],
     },
     {
       name: "Sri Lankan",
+      alias: "srilankan",
       answer_ids: [35, 267, 82, 92, 98, 113, 134],
     },
     {
       name: "Swedish",
+      alias: "swedish",
       answer_ids: [36, 267, 89, 132],
     },
     {
       name: "Swiss Food",
+      alias: "swissfood",
       answer_ids: [36, 49, 55, 56, 267, 269, 281, 288, 294, 89, 95],
     },
     {
       name: "Syrian",
+      alias: "syrian",
       answer_ids: [35, 48, 267, 316, 91, 103],
     },
     {
       name: "Taiwanese",
+      alias: "taiwanese",
       answer_ids: [35, 47, 53, 267, 315, 82],
     },
     {
       name: "Tex-Mex",
+      alias: "texmex",
       answer_ids: [4, 36, 50, 267, 280, 289, 90, 111, 120],
     },
     {
       name: "Thai",
+      alias: "thai",
       answer_ids: [35, 47, 53, 267, 315, 90, 98],
     },
     {
       name: "Traditional Norwegian",
+      alias: "traditionalnorwegian",
       answer_ids: [36, 267, 89, 95],
     },
     {
       name: "Traditional Swedish",
+      alias: "traditionalswedish",
       answer_ids: [36, 267, 89],
     },
     {
       name: "Turkish",
+      alias: "turkish",
       answer_ids: [36, 267, 316, 90, 111],
     },
     {
       name: "Ukrainian",
+      alias: "ukrainian",
       answer_ids: [36, 267, 91, 97],
     },
     {
       name: "Uzbek",
+      alias: "uzbek",
       answer_ids: [36, 267, 82, 92],
     },
     {
       name: "Vietnamese",
+      alias: "vietnamese",
       answer_ids: [35, 47, 53, 267, 315, 89, 98, 112],
     },
     {
       name: "Gluten-Free",
+      alias: "glutenfree",
       answer_ids: [37, 278, 279, 280, 281, 304],
     },
     {
       name: "Halal",
+      aliad: "halal",
       answer_ids: [267, 299, 316],
     },
     {
       name: "Kosher",
+      alias: "kosher",
       answer_ids: [299, 316],
     },
     {
       name: "Vegan",
+      alias: "vegan",
       answer_ids: [37, 51, 118, 146, 147, 148, 150, 114, 285, 290, 299, 304, 312, 327, 339],
     },
     {
       name: "Vegetarian",
+      alias: "vegetarian",
       answer_ids: [37, 51, 55, 56, 87, 118, 146, 147, 148, 150, 114, 278, 279, 285, 290, 299, 304, 312, 327, 339],
     },
     {
