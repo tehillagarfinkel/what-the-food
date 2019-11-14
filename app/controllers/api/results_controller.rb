@@ -23,10 +23,10 @@ class Api::ResultsController < ApplicationController
     params[:answerIds].each do |id|
       search_filters.each do |search_filter|
         if search_filter[:answer_ids].include?(id)
-          if results[search_filter[:name]]
-            results[search_filter[:name]] += 1
+          if results[search_filter[:alias]]
+            results[search_filter[:alias]] += 1
           else
-            results[search_filter[:name]] = 1
+            results[search_filter[:alias]] = 1
           end
         end
       end
@@ -38,8 +38,8 @@ class Api::ResultsController < ApplicationController
       .take(3)
       .to_h
       .keys
-      .map { |value| value.downcase.gsub(/[\W]/, "") }
       .join(",")
+    # .map { |value| value.downcase.gsub(/[\W]/, "") }
 
     puts categories
 
@@ -48,7 +48,7 @@ class Api::ResultsController < ApplicationController
         "X-User-Email" => ENV["YELP_API_EMAIL"],
         "Authorization" => "Bearer #{ENV["YELP_API_KEY"]}",
       })
-      .get("https://api.yelp.com/v3/businesses/search", params: { location: 60601, radius: 4000, open_now: true, categories: "#{categories}" })
+      .get("https://api.yelp.com/v3/businesses/search", params: { location: params[:location], radius: 4000, open_now: true, categories: "#{categories}" })
       .parse
 
     @restaurants.sort_by()

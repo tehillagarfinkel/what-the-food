@@ -19,7 +19,11 @@
       />
       <div class="input-group-append">
         <router-link to="Question">
-          <button class="btn btn-outline-secondary" id="button-addon2" v-on:click="start()">
+          <button
+            class="btn btn-outline-secondary"
+            id="button-addon2"
+            v-on:click="start()"
+          >
             WTF am I hungry for?!
           </button>
         </router-link>
@@ -37,7 +41,7 @@ export default {
   },
   methods: {
     start: function() {
-      localStorage.setItem("counter", 0);
+      // localStorage.setItem("counter", 0);
       localStorage.setItem("zip", this.zip);
     }
   }
