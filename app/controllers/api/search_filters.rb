@@ -369,12 +369,12 @@ def search_filters
     },
     {
       name: "Western Style Japanese Food",
-      alias: "westernstylejapanesefood"
+      alias: "westernstylejapanesefood",
       answer_ids: [2, 37, 47, 267, 296, 315, 96],
     },
     {
       name: "Jewish",
-      alias: "jewish"
+      alias: "jewish",
       answer_ids: [36, 267, 316, 89],
     },
     {

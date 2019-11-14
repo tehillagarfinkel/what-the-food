@@ -12,10 +12,12 @@
         <div class="m/c form-check opensans sz" v-if="this.questionFormatId === 1 || 3">
           <form action="">
             <div v-for="option in answers">
-              <input class="form-check-input" type="radio" name="answer" :value="option.id" id="option-input" />
-              <label class="form-check-label" for="option-input">
-                {{ option.option }}
-              </label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" :value="option.id" id="option-input" />
+                <label class="form-check-label" for="option-input">
+                  {{ option.option }}
+                </label>
+              </div>
             </div>
           </form>
         </div>
