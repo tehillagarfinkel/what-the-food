@@ -182,178 +182,222 @@ def search_filters
     },
     {
       name: "Afghan",
+      alias: "afghani",
       answer_ids: [35, 82, 113, 134],
     },
     {
       name: "African",
+      alias: "african",
       answer_ids: [35, 53, 59, 267],
     },
     {
       name: "South African",
+      alias: "southafrican",
       answer_ids: [36, 104, 110, 134],
     },
     {
       name: "American",
+      alias: "newamerican",
       answer_ids: [3, 36, 50, 55, 60, 81, 83, 87, 89, 100, 109, 121, 132, 136, 267, 269, 270, 271, 272, 273, 278, 279, 280, 282, 295, 294],
     },
     {
       name: "Arabian",
+      alias: "arabian",
       answer_ids: [35, 50, 90, 104, 112],
     },
     {
       name: "Argentine",
+      alias: "argentine",
       answer_ids: [4, 36, 91, 111, 267, 311],
     },
     {
       name: "Armenian",
+      alias: "armenian",
       answer_ids: [36, 82, 90, 103, 112, 267, 317],
     },
     {
       name: "Australian",
+      alias: "australian",
       answer_ids: [36, 89, 93, 111, 134, 135, 267, 286, 350],
     },
     {
       name: "Austrian",
+      alias: "austrian",
       answer_ids: [36, 89, 93, 112, 267, 268, 295, 317],
     },
     {
       name: "Bangladeshi",
+      alias: "bangladeshi",
       answer_ids: [35, 82, 92, 98, 113, 134, 267],
     },
     {
       name: "ּBelgian",
+      alias: "belgian",
       answer_ids: [36, 56, 89, 267, 269, 288, 294, 297, 314],
     },
     {
       name: "Flemish",
+      alias: "flemish",
       answer_ids: [49, 89, 110, 267, 269, 288, 294],
     },
     {
       name: "Brazilian",
+      alias: "brazilian",
       answer_ids: [35, 91, 104, 137, 267, 307, 311],
     },
     {
       name: "British",
+      alias: "british",
       answer_ids: [60, 89, 97, 109, 132, 134, 130, 267, 283, 294],
     },
     {
       name: "Bulgarian",
+      alias: "bulgarian",
       answer_ids: [90, 111, 267, 317],
     },
     {
       name: "Cajun/Creole",
+      alias: "cajun",
       answer_ids: [35, 53, 59, 82, 113, 267],
     },
     {
       name: "Cambodian",
+      alias: "cambodian",
       answer_ids: [35, 92, 98, 112, 267],
     },
     {
       name: "Canadian",
+      alias: "newcanadian",
       answer_ids: [36, 55, 89, 109, 135, 267, 281, 282],
     },
     {
       name: "Caribbean",
+      alias: "caribbean",
       answer_ids: [36, 59, 90, 111, 266, 304],
     },
     {
       name: "Dominican",
+      alias: "dominican",
       answer_ids: [4, 36, 90, 266, 304],
     },
     {
       name: "Haitian",
+      alias: "haitian",
       answer_ids: [36, 112, 266, 304],
     },
     {
       name: "Puerto Rican",
+      alias: "puertorican",
       answer_ids: [4, 36, 104, 266],
     },
     {
       name: "Chilean",
+      alias: "chilean",
       answer_ids: [4, 36, 91, 267],
     },
     {
       name: "Chinese",
+      alias: "chinese",
       answer_ids: [2, 35, 47, 59, 91, 96, 98, 110, 267, 315],
     },
     {
       name: "Cuban",
+      alias: "cuban",
       answer_ids: [4, 36, 82, 99, 110, 137, 266, 304],
     },
     {
       name: "Czech",
+      alias: "czech",
       answer_ids: [111, 267, 268, 295, 317],
     },
     {
       name: "Danish",
+      alias: "danish",
       answer_ids: [36, 49, 55, 111, 267, 269, 281, 294, 314],
     },
     {
       name: "Eastern European",
+      alias: "eastern_european",
       answer_ids: [36, 59, 89, 97, 110, 267, 268, 293, 317],
     },
     {
       name: "Ethiopian",
+      alias: "ethiopian",
       answer_ids: [35, 50, 53, 59, 92, 103, 267],
     },
     {
       name: "Filipino",
+      alias: "filipino",
       answer_ids: [36, 82, 98, 111, 267],
     },
     {
       name: "French",
+      alias: "french",
       answer_ids: [36, 49, 55, 59, 89, 267, 269, 281, 294, 314],
     },
     {
       name: "Georgian",
+      alias: "georgian",
       answer_ids: [82, 113, 267],
     },
     {
       name: "German",
+      alias: "german",
       answer_ids: [36, 49, 89, 132, 267, 268],
     },
     {
       name: "Greek",
+      alias: "greek",
       answer_ids: [37, 59, 90, 104, 267, 318],
     },
     {
       name: "Guamanian",
+      alias: "guamanian",
       answer_ids: [36, 82, 99, 113, 266],
     },
     {
       name: "Hawaiian",
+      alias: "hawaiian",
       answer_ids: [36, 59, 89, 103, 266],
     },
     {
       name: "Honduran",
+      alias: "honduran",
       answer_ids: [4, 36, 82, 99, 113],
     },
     {
       name: "Hungarian",
+      alias: "hungarian",
       answer_ids: [36, 89, 104, 111, 267, 268, 317],
     },
     {
       name: "Iberian",
+      alias: "iberian",
       answer_ids: [4, 36, 90, 112, 267, 295],
     },
     {
       name: "Indian",
+      alias: "indpak",
       answer_ids: [35, 53, 59, 92, 98, 267, 294],
     },
     {
       name: "Indonesian",
+      alias: "indonesian",
       answer_ids: [35, 92, 98, 113, 267],
     },
     {
       name: "Irish",
+      alias: "irish",
       answer_ids: [36, 90, 134, 267, 294],
     },
     {
       name: "Israeli",
+      alias: "israeli",
       answer_ids: [36, 90, 267, 316],
     },
     {
       name: "Italian",
+      alias: "italian",
       answer_ids: [1, 5, 36, 83, 90, 104, 267, 316, 267, 292, 318, 83, 90, 104],
     },
 
