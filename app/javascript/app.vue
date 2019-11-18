@@ -128,13 +128,8 @@
     </div>
 
     <!-- Page Content -->
-    <div class="container opaque">
-      <div class="card border-0 shadow my-5">
-        <div class="card-body p-5">
-          <router-view></router-view>
-        </div>
-      </div>
-    </div>
+
+    <router-view></router-view>
     <br />
     <br />
     <br />
@@ -191,10 +186,6 @@ p {
   background-size: cover;
   -o-background-size: cover;
   min-height: 900px;
-}
-
-.opaque {
-  opacity: 0.9;
 }
 
 .opensans {

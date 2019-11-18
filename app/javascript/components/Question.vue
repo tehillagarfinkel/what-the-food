@@ -1,6 +1,6 @@
 <template>
   <div class="question">
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center opaque" style="min-height: 600px;">
       <h1 class="logo sz2">Question {{ counter }}:</h1>
       <h1 class="lead sz3">
         {{ query }}
@@ -34,10 +34,10 @@
       <hr />
 
       <div class="next">
-        <div v-if="counter < 20">
+        <div v-if="counter < 4">
           <button class="logo btn-lg" v-on:click="submit()">Next Question...</button>
         </div>
-        <div class="logo btn-lg" v-if="counter >= 20">
+        <div class="logo btn-lg" v-if="counter >= 4">
           <button @click="sendSelectedAnswerIds()">Show My Results</button>
         </div>
       </div>
@@ -72,6 +72,10 @@
 
 .next {
   padding-top: 15px;
+}
+
+.opaque {
+  opacity: 0.9;
 }
 </style>
 
