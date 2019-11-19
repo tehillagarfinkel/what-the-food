@@ -29,6 +29,14 @@
         </div>
       </div>
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer class="logo">
+      <p>Save your decision making for Netflix</p>
+    </footer>
   </div>
 </template>
 
@@ -60,5 +68,10 @@ export default {
 
 .opaque {
   opacity: 0.9;
+}
+
+p {
+  font-size: 2em;
+  text-align: center;
 }
 </style>

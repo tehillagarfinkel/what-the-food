@@ -130,12 +130,6 @@
     <!-- Page Content -->
 
     <router-view></router-view>
-    <br />
-    <br />
-    <br />
-    <footer class="logo">
-      <p>Save your decision making for Netflix</p>
-    </footer>
   </div>
 </template>
 

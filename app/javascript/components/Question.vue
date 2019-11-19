@@ -1,6 +1,6 @@
 <template>
   <div class="question">
-    <div class="jumbotron text-center opaque" style="min-height: 600px;">
+    <div class="jumbotron text-center opaque" style="min-height: 500px;">
       <h1 class="logo sz2">Question {{ counter }}:</h1>
       <h1 class="lead sz3">
         {{ query }}
@@ -12,19 +12,29 @@
         <div class="m/c form-check opensans sz" v-if="this.questionFormatId === 1 || 3">
           <form action="">
             <div v-for="option in answers">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="answer" :value="option.id" id="option-input" />
+              <input
+                class="form-check btn-block btn-dark"
+                type="button"
+                :value="option.option"
+                id="option-input"
+                name="answer"
+                for="option-input"
+              />
+              <br />
+
+              <!-- <div class="form-check"> -->
+              <!-- <input class="form-check-input" type="radio" name="answer" :value="option.id" id="option-input" />
                 <label class="form-check-label" for="option-input">
                   {{ option.option }}
-                </label>
-              </div>
+                </label> -->
+              <!-- </div> -->
             </div>
           </form>
         </div>
 
         <form>
           <div class="form-group opensans sz" v-if="questionFormatId === 2">
-            <label for="formControlRange">Example Range input</label>
+            <label for="formControlRange">{{ option.option }}</label>
             <input v-model="rangeValue" min="1" max="5" type="range" class="form-control-range" id="formControlRange" />
             <p class="sz">{{ answers[rangeValue - 1] }}</p>
           </div>
@@ -34,10 +44,10 @@
       <hr />
 
       <div class="next">
-        <div v-if="counter < 4">
+        <div v-if="counter < 3">
           <button class="logo btn-lg" v-on:click="submit()">Next Question...</button>
         </div>
-        <div class="logo btn-lg" v-if="counter >= 4">
+        <div class="logo btn-lg" v-if="counter >= 3">
           <button @click="sendSelectedAnswerIds()">Show My Results</button>
         </div>
       </div>
