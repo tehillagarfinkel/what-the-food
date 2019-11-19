@@ -13,7 +13,7 @@
           <form action="">
             <div v-for="option in answers">
               <input
-                class="form-check btn-block btn-dark"
+                class="form-check btn-block btn-light"
                 type="button"
                 :value="option.option"
                 id="option-input"
